@@ -1,0 +1,872 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Shader">
+      <UniqueIdentifier>{5ed45126-c779-413c-8568-ba0414564977}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject">
+      <UniqueIdentifier>{fdf01c95-a136-4c1e-9aaa-6139dee9f301}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects">
+      <UniqueIdentifier>{b9c53bc3-60ac-42d2-a093-06c69fbfa224}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components">
+      <UniqueIdentifier>{1bfaf436-0b03-4a01-b81c-a031525dddca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\Camera">
+      <UniqueIdentifier>{347e8fb8-5346-490e-b0e7-1273c202c7e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\KeyPlay">
+      <UniqueIdentifier>{9e3d7ad2-ab4c-4617-9f16-eefc7788cb6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Time">
+      <UniqueIdentifier>{572dfd60-b068-4800-910a-b1ba348c6fd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\Plane">
+      <UniqueIdentifier>{42ccbe3c-2cd1-4263-a353-cc7244bc4349}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\Cube">
+      <UniqueIdentifier>{facbb355-426f-4694-a877-68c21fb30254}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{039a9ded-379f-4def-8f50-f3b2e45b752b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Game">
+      <UniqueIdentifier>{25db05f1-06e3-4b01-bda7-c5c2d75db021}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Result">
+      <UniqueIdentifier>{2e28eed8-caff-4684-b318-82f6a07e718e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\3DVertex">
+      <UniqueIdentifier>{07190eca-f636-4a56-b1ec-82ff145d9cc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\Shader">
+      <UniqueIdentifier>{e87c4015-0cdd-46ef-b0b1-1ea8018bc53a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\2DVertex">
+      <UniqueIdentifier>{e0f15bd5-1ef5-4fd4-95c4-b17423bcb13e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\Square">
+      <UniqueIdentifier>{d2643495-2978-4339-b66b-9fb5b1d0e764}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\Camera">
+      <UniqueIdentifier>{f7fc5d86-eb73-41ae-82c1-db11bbef8066}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\Player">
+      <UniqueIdentifier>{e32f67f8-230e-4cdf-a105-b9df8d39359a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Title">
+      <UniqueIdentifier>{1fe43a60-41a1-4f70-9c10-23cdbaaf7f08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\TitleLogo">
+      <UniqueIdentifier>{e7c8771e-dccc-4f7e-8408-cfdd03a28d0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\titleBG">
+      <UniqueIdentifier>{f24727df-89a7-4f69-bc5a-a97cee7841e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imGui">
+      <UniqueIdentifier>{91f746ac-b35c-4bb3-b827-e3df0ac37dbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imGui\imGuiComponents">
+      <UniqueIdentifier>{9c9d16c9-f817-4fcb-9153-91677e65608e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imGui\imGuiManager">
+      <UniqueIdentifier>{0ee96133-632a-481c-a427-cc2f0f21ff95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\Model">
+      <UniqueIdentifier>{880b7e79-fec5-4dfd-a70c-b2b3cc1d0086}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\Manager">
+      <UniqueIdentifier>{14b1a30f-da9b-4ec9-8d9a-b3f1eb56e808}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Load">
+      <UniqueIdentifier>{337a0582-3fc8-4384-9983-1cf16b15101b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\TitleButton">
+      <UniqueIdentifier>{da8d621e-acd0-4436-96f3-a5c1a20ceec1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\Button">
+      <UniqueIdentifier>{cc5fbdd1-42f1-49ef-a570-fba7b83d5d47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Create">
+      <UniqueIdentifier>{463420a1-910d-4b48-a8e8-2bed9a090c9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\Text">
+      <UniqueIdentifier>{43cc2908-0159-4fbf-8dbe-8bb9c7e0a2e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\CreateObject">
+      <UniqueIdentifier>{d72df0f9-8192-4ecf-9509-4b68129452d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\Mouse">
+      <UniqueIdentifier>{deacbd72-9405-4aab-8138-23586b2e20a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Debug">
+      <UniqueIdentifier>{d3bfe4a4-b220-4224-9c4f-3650f7164180}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\Debug">
+      <UniqueIdentifier>{c0a2d3ff-8ff4-4def-927a-5a2658c8c511}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\CreateObject">
+      <UniqueIdentifier>{061197da-9a84-4058-9648-7e5a0d8adb30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\CreateObject\DeleteSpeakText">
+      <UniqueIdentifier>{07b13b0d-7b04-40aa-b857-2bcee14e7b13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\CreateObject\CreateSpeakText">
+      <UniqueIdentifier>{6338688b-67bb-4085-ba81-749855658c51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\CreateObject\PlayButton">
+      <UniqueIdentifier>{df7279ee-8a00-4fe3-864b-cabbec47fe19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\ExecuteObject">
+      <UniqueIdentifier>{3b855d93-a048-49e4-8052-54c97997c1c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\ExecuteObject\TextBox">
+      <UniqueIdentifier>{4dc60d7b-ffaf-4657-b726-60c02bee91b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\ExecuteObject\Texture">
+      <UniqueIdentifier>{4f9de451-9ca5-4e1d-9139-1c7f41d24df3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\CreateObject\CreateList">
+      <UniqueIdentifier>{35a169a0-8693-4666-b74e-6ac87e0363a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Fade">
+      <UniqueIdentifier>{b596146d-6404-4cb2-a0da-6fd302affe18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\TitlePaper">
+      <UniqueIdentifier>{9068d7fa-e298-41e5-a5b4-b6fda88b3b69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\Transform">
+      <UniqueIdentifier>{8cf15142-c434-45ce-9661-8ffb0f6b52c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\Particle">
+      <UniqueIdentifier>{7b9aa898-8f55-49d7-bda7-ad6b7b0478f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\Skydome">
+      <UniqueIdentifier>{9418353c-6449-41b0-a7f8-29afb773a303}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\ExecuteObject\ExecuteManager">
+      <UniqueIdentifier>{740bf104-01ff-4bac-95a0-fe68effe510d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\ExecuteObject\TextBox\nameText">
+      <UniqueIdentifier>{1848b922-90ed-4142-8516-8e0156d97177}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\ExecuteObject\TextBox\speakText">
+      <UniqueIdentifier>{72626bb1-8460-4a3b-95e0-29925c00d6db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\ExecuteObject\TextBox\textBox">
+      <UniqueIdentifier>{d9d098e4-2819-4af3-98b6-3708e17cad20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\CreateObject\CreateBgTexture">
+      <UniqueIdentifier>{7e6c4540-be0a-408e-8996-de8522cf82b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\CreateObject\CreateBgm">
+      <UniqueIdentifier>{e63e5525-c22d-4efb-96d8-3992d6090e7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\ExecuteObject\Music">
+      <UniqueIdentifier>{996f3baf-6f86-46a6-9f7b-25ec80f8cc79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\ExecuteObject\Texture\Chara">
+      <UniqueIdentifier>{1c35abc7-eae6-4af4-80bf-5457b722613d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\ExecuteObject\Texture\BgTexture">
+      <UniqueIdentifier>{f9448b47-f128-4b73-9e2b-f6121297f37d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\CreateObject\CreateChara">
+      <UniqueIdentifier>{28d5d095-ca81-4e98-96cc-1ef090cdb589}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\CreateObject\CreateGameStop">
+      <UniqueIdentifier>{cf4a69e5-d149-4a6d-842f-f1ac479e045f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\ExecuteObject\GameStop">
+      <UniqueIdentifier>{31c94a13-e74a-435d-a5e4-773da52d17a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\CreateObject\CreateBranchButton">
+      <UniqueIdentifier>{a85277db-e3f2-4bf7-8e23-1f52bea4fe57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\CreateObject\CreateRavel">
+      <UniqueIdentifier>{dfc7d3f5-eab5-47e4-a199-628ec22d96ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\ExecuteObject\Button">
+      <UniqueIdentifier>{842db064-c03c-4e42-8226-d3fd5f7ffea9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\ExecuteObject\Button\BranchButton">
+      <UniqueIdentifier>{5185965d-f08e-45e0-8a08-af9883dfe98c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\CreateObject\CreateJump">
+      <UniqueIdentifier>{6691767b-2ba6-42e6-a412-a857e3e2bcb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\ExecuteObject\Jump">
+      <UniqueIdentifier>{e6367a5a-b9d5-44ac-ae07-f103df3c3a84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\CreateObject\CreateSE">
+      <UniqueIdentifier>{20a11df8-cb65-4a20-baac-3eab68db6f0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\CreateObject\ProjectSaveButton">
+      <UniqueIdentifier>{0edac7c7-7bf4-45d5-8dd5-5eb6964824f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\ProjectLoad">
+      <UniqueIdentifier>{65ae19d4-d9e8-4b2b-a27f-6ac7eeab5b63}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="manager.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="input.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="modelRenderer.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="player.cpp">
+      <Filter>Objects\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="camera.cpp">
+      <Filter>Objects\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="time.cpp">
+      <Filter>Time</Filter>
+    </ClCompile>
+    <ClCompile Include="cube.cpp">
+      <Filter>Objects\Cube</Filter>
+    </ClCompile>
+    <ClCompile Include="plane.cpp">
+      <Filter>Objects\Plane</Filter>
+    </ClCompile>
+    <ClCompile Include="game.cpp">
+      <Filter>Scene\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="result.cpp">
+      <Filter>Scene\Result</Filter>
+    </ClCompile>
+    <ClCompile Include="scene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="square.cpp">
+      <Filter>Objects\Square</Filter>
+    </ClCompile>
+    <ClCompile Include="title.cpp">
+      <Filter>Scene\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="titleLogo.cpp">
+      <Filter>Objects\TitleLogo</Filter>
+    </ClCompile>
+    <ClCompile Include="titleBG.cpp">
+      <Filter>Objects\titleBG</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui.cpp">
+      <Filter>imGui\imGuiComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_draw.cpp">
+      <Filter>imGui\imGuiComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_impl_dx11.cpp">
+      <Filter>imGui\imGuiComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_impl_win32.cpp">
+      <Filter>imGui\imGuiComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_tables.cpp">
+      <Filter>imGui\imGuiComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_widgets.cpp">
+      <Filter>imGui\imGuiComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="animationModel.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="fade.cpp">
+      <Filter>Scene\Fade</Filter>
+    </ClCompile>
+    <ClCompile Include="texture.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="load.cpp">
+      <Filter>Scene\Load</Filter>
+    </ClCompile>
+    <ClCompile Include="loadingRowling.cpp">
+      <Filter>Scene\Load</Filter>
+    </ClCompile>
+    <ClCompile Include="mouse.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="createButton.cpp">
+      <Filter>Objects\TitleButton</Filter>
+    </ClCompile>
+    <ClCompile Include="executeButton.cpp">
+      <Filter>Objects\TitleButton</Filter>
+    </ClCompile>
+    <ClCompile Include="createScene.cpp">
+      <Filter>Scene\Create</Filter>
+    </ClCompile>
+    <ClCompile Include="text.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="createSpeakText.cpp">
+      <Filter>Objects\CreateObject\CreateSpeakText</Filter>
+    </ClCompile>
+    <ClCompile Include="createList.cpp">
+      <Filter>Objects\CreateObject\CreateList</Filter>
+    </ClCompile>
+    <ClCompile Include="deleteSpeakText.cpp">
+      <Filter>Objects\CreateObject\DeleteSpeakText</Filter>
+    </ClCompile>
+    <ClCompile Include="playButton.cpp">
+      <Filter>Objects\CreateObject\PlayButton</Filter>
+    </ClCompile>
+    <ClCompile Include="playButtonBg.cpp">
+      <Filter>Objects\CreateObject\PlayButton</Filter>
+    </ClCompile>
+    <ClCompile Include="debug.cpp">
+      <Filter>Scene\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="createBgTexture.cpp">
+      <Filter>Objects\CreateObject\CreateBgTexture</Filter>
+    </ClCompile>
+    <ClCompile Include="titlePaper.cpp">
+      <Filter>Objects\TitlePaper</Filter>
+    </ClCompile>
+    <ClCompile Include="titleCamera.cpp">
+      <Filter>Objects\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="cherryBlossomParticle.cpp">
+      <Filter>Objects\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="titleSkydome.cpp">
+      <Filter>Objects\Skydome</Filter>
+    </ClCompile>
+    <ClCompile Include="executeManager.cpp">
+      <Filter>Objects\ExecuteObject\ExecuteManager</Filter>
+    </ClCompile>
+    <ClCompile Include="bgTexture.cpp">
+      <Filter>Objects\ExecuteObject\Texture\BgTexture</Filter>
+    </ClCompile>
+    <ClCompile Include="bgTextureOutput.cpp">
+      <Filter>Objects\ExecuteObject\Texture\BgTexture</Filter>
+    </ClCompile>
+    <ClCompile Include="nameText.cpp">
+      <Filter>Objects\ExecuteObject\TextBox\nameText</Filter>
+    </ClCompile>
+    <ClCompile Include="textBox.cpp">
+      <Filter>Objects\ExecuteObject\TextBox\textBox</Filter>
+    </ClCompile>
+    <ClCompile Include="speakText.cpp">
+      <Filter>Objects\ExecuteObject\TextBox\speakText</Filter>
+    </ClCompile>
+    <ClCompile Include="charaTexture.cpp">
+      <Filter>Objects\ExecuteObject\Texture\Chara</Filter>
+    </ClCompile>
+    <ClCompile Include="createBgm.cpp">
+      <Filter>Objects\CreateObject\CreateBgm</Filter>
+    </ClCompile>
+    <ClCompile Include="bgm.cpp">
+      <Filter>Objects\ExecuteObject\Music</Filter>
+    </ClCompile>
+    <ClCompile Include="sound.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="bgmOutput.cpp">
+      <Filter>Objects\ExecuteObject\Music</Filter>
+    </ClCompile>
+    <ClCompile Include="createCharaAppearance.cpp">
+      <Filter>Objects\CreateObject\CreateChara</Filter>
+    </ClCompile>
+    <ClCompile Include="charaAppearanceOutput.cpp">
+      <Filter>Objects\ExecuteObject\Texture\Chara</Filter>
+    </ClCompile>
+    <ClCompile Include="imGuiManager.cpp">
+      <Filter>imGui\imGuiManager</Filter>
+    </ClCompile>
+    <ClCompile Include="createCharaChange.cpp">
+      <Filter>Objects\CreateObject\CreateChara</Filter>
+    </ClCompile>
+    <ClCompile Include="charaChangeOutput.cpp">
+      <Filter>Objects\ExecuteObject\Texture\Chara</Filter>
+    </ClCompile>
+    <ClCompile Include="createCharaExit.cpp">
+      <Filter>Objects\CreateObject\CreateChara</Filter>
+    </ClCompile>
+    <ClCompile Include="charaExitOutput.cpp">
+      <Filter>Objects\ExecuteObject\Texture\Chara</Filter>
+    </ClCompile>
+    <ClCompile Include="createGameStop.cpp">
+      <Filter>Objects\CreateObject\CreateGameStop</Filter>
+    </ClCompile>
+    <ClCompile Include="gameStopOutput.cpp">
+      <Filter>Objects\ExecuteObject\GameStop</Filter>
+    </ClCompile>
+    <ClCompile Include="createBranchButton.cpp">
+      <Filter>Objects\CreateObject\CreateBranchButton</Filter>
+    </ClCompile>
+    <ClCompile Include="createRavel.cpp">
+      <Filter>Objects\CreateObject\CreateRavel</Filter>
+    </ClCompile>
+    <ClCompile Include="branchButtonOutput.cpp">
+      <Filter>Objects\ExecuteObject\Button\BranchButton</Filter>
+    </ClCompile>
+    <ClCompile Include="branchButton.cpp">
+      <Filter>Objects\ExecuteObject\Button\BranchButton</Filter>
+    </ClCompile>
+    <ClCompile Include="createJump.cpp">
+      <Filter>Objects\CreateObject\CreateJump</Filter>
+    </ClCompile>
+    <ClCompile Include="jumpOutput.cpp">
+      <Filter>Objects\ExecuteObject\Jump</Filter>
+    </ClCompile>
+    <ClCompile Include="createSe.cpp">
+      <Filter>Objects\CreateObject\CreateSE</Filter>
+    </ClCompile>
+    <ClCompile Include="se.cpp">
+      <Filter>Objects\ExecuteObject\Music</Filter>
+    </ClCompile>
+    <ClCompile Include="seOutput.cpp">
+      <Filter>Objects\ExecuteObject\Music</Filter>
+    </ClCompile>
+    <ClCompile Include="projectSaveButton.cpp">
+      <Filter>Objects\CreateObject\ProjectSaveButton</Filter>
+    </ClCompile>
+    <ClCompile Include="projectLoad.cpp">
+      <Filter>Objects\ProjectLoad</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="manager.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="vector3.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="modelRenderer.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="input.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="modelComponent.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="component.h">
+      <Filter>Components\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="gameObject.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="player.h">
+      <Filter>Objects\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="camera.h">
+      <Filter>Objects\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="cameraChase.h">
+      <Filter>Components\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="keyMove.h">
+      <Filter>Components\KeyPlay</Filter>
+    </ClInclude>
+    <ClInclude Include="keyRotate.h">
+      <Filter>Components\KeyPlay</Filter>
+    </ClInclude>
+    <ClInclude Include="cameraView.h">
+      <Filter>Components\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="time.h">
+      <Filter>Time</Filter>
+    </ClInclude>
+    <ClInclude Include="textureComponent.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="cube.h">
+      <Filter>Objects\Cube</Filter>
+    </ClInclude>
+    <ClInclude Include="plane.h">
+      <Filter>Objects\Plane</Filter>
+    </ClInclude>
+    <ClInclude Include="scene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="game.h">
+      <Filter>Scene\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="result.h">
+      <Filter>Scene\Result</Filter>
+    </ClInclude>
+    <ClInclude Include="rigidbody.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="boxVertex.h">
+      <Filter>Components\3DVertex</Filter>
+    </ClInclude>
+    <ClInclude Include="planeVertex.h">
+      <Filter>Components\3DVertex</Filter>
+    </ClInclude>
+    <ClInclude Include="shader3D.h">
+      <Filter>Components\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="shader2D.h">
+      <Filter>Components\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="squareVertex.h">
+      <Filter>Components\2DVertex</Filter>
+    </ClInclude>
+    <ClInclude Include="square.h">
+      <Filter>Objects\Square</Filter>
+    </ClInclude>
+    <ClInclude Include="aabb.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="title.h">
+      <Filter>Scene\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="titleLogo.h">
+      <Filter>Objects\TitleLogo</Filter>
+    </ClInclude>
+    <ClInclude Include="keyJump.h">
+      <Filter>Components\KeyPlay</Filter>
+    </ClInclude>
+    <ClInclude Include="titleBG.h">
+      <Filter>Objects\titleBG</Filter>
+    </ClInclude>
+    <ClInclude Include="imGuiManager.h">
+      <Filter>imGui\imGuiManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_rectpack.h">
+      <Filter>imGui\imGuiComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_textedit.h">
+      <Filter>imGui\imGuiComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_truetype.h">
+      <Filter>imGui\imGuiComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imconfig.h">
+      <Filter>imGui\imGuiComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui.h">
+      <Filter>imGui\imGuiComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_impl_dx11.h">
+      <Filter>imGui\imGuiComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_impl_win32.h">
+      <Filter>imGui\imGuiComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_internal.h">
+      <Filter>imGui\imGuiComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="animationModel.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="modelRendererComponent.h">
+      <Filter>Components\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="animationModelComponent.h">
+      <Filter>Components\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="fade.h">
+      <Filter>Scene\Fade</Filter>
+    </ClInclude>
+    <ClInclude Include="texture.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="load.h">
+      <Filter>Scene\Load</Filter>
+    </ClInclude>
+    <ClInclude Include="loadingRowling.h">
+      <Filter>Scene\Load</Filter>
+    </ClInclude>
+    <ClInclude Include="mouse.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="createButton.h">
+      <Filter>Objects\TitleButton</Filter>
+    </ClInclude>
+    <ClInclude Include="executeButton.h">
+      <Filter>Objects\TitleButton</Filter>
+    </ClInclude>
+    <ClInclude Include="createButtonComponent.h">
+      <Filter>Components\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="createScene.h">
+      <Filter>Scene\Create</Filter>
+    </ClInclude>
+    <ClInclude Include="textComponent.h">
+      <Filter>Components\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="text.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="createSpeakText.h">
+      <Filter>Objects\CreateObject\CreateSpeakText</Filter>
+    </ClInclude>
+    <ClInclude Include="objectDragDrop.h">
+      <Filter>Components\CreateObject</Filter>
+    </ClInclude>
+    <ClInclude Include="mouseCollision.h">
+      <Filter>Components\Mouse</Filter>
+    </ClInclude>
+    <ClInclude Include="createList.h">
+      <Filter>Objects\CreateObject\CreateList</Filter>
+    </ClInclude>
+    <ClInclude Include="deleteSpeakText.h">
+      <Filter>Objects\CreateObject\DeleteSpeakText</Filter>
+    </ClInclude>
+    <ClInclude Include="deleteObjectButtonComponent.h">
+      <Filter>Components\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="setDeleteButton.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="mouseWheelScroll.h">
+      <Filter>Components\Mouse</Filter>
+    </ClInclude>
+    <ClInclude Include="listVertex.h">
+      <Filter>Components\2DVertex</Filter>
+    </ClInclude>
+    <ClInclude Include="sortingLayer.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="mouseDragScroll.h">
+      <Filter>Components\Mouse</Filter>
+    </ClInclude>
+    <ClInclude Include="playButton.h">
+      <Filter>Objects\CreateObject\PlayButton</Filter>
+    </ClInclude>
+    <ClInclude Include="playButtonBg.h">
+      <Filter>Objects\CreateObject\PlayButton</Filter>
+    </ClInclude>
+    <ClInclude Include="playButtonComponent.h">
+      <Filter>Components\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="debug.h">
+      <Filter>Scene\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="textBoxComponent.h">
+      <Filter>Components\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="createBgTexture.h">
+      <Filter>Objects\CreateObject\CreateBgTexture</Filter>
+    </ClInclude>
+    <ClInclude Include="executeManagerComponent.h">
+      <Filter>Components\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="titlePaper.h">
+      <Filter>Objects\TitlePaper</Filter>
+    </ClInclude>
+    <ClInclude Include="titleCamera.h">
+      <Filter>Objects\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="cameraAutoRotate.h">
+      <Filter>Components\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="paperWave.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="meshVertex.h">
+      <Filter>Components\3DVertex</Filter>
+    </ClInclude>
+    <ClInclude Include="particleVertex.h">
+      <Filter>Components\3DVertex</Filter>
+    </ClInclude>
+    <ClInclude Include="transform.h">
+      <Filter>Components\Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="transformDraw.h">
+      <Filter>Components\Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="transformDrawParticle.h">
+      <Filter>Components\Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="cherryBlossomParticleComponent.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="cherryBlossomParticle.h">
+      <Filter>Objects\Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="titleSkydome.h">
+      <Filter>Objects\Skydome</Filter>
+    </ClInclude>
+    <ClInclude Include="bgTextureOutputComponent.h">
+      <Filter>Components\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="executeManager.h">
+      <Filter>Objects\ExecuteObject\ExecuteManager</Filter>
+    </ClInclude>
+    <ClInclude Include="buttonZoomInOut.h">
+      <Filter>Components\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="bgTexture.h">
+      <Filter>Objects\ExecuteObject\Texture\BgTexture</Filter>
+    </ClInclude>
+    <ClInclude Include="bgTextureOutput.h">
+      <Filter>Objects\ExecuteObject\Texture\BgTexture</Filter>
+    </ClInclude>
+    <ClInclude Include="nameText.h">
+      <Filter>Objects\ExecuteObject\TextBox\nameText</Filter>
+    </ClInclude>
+    <ClInclude Include="textBox.h">
+      <Filter>Objects\ExecuteObject\TextBox\textBox</Filter>
+    </ClInclude>
+    <ClInclude Include="speakText.h">
+      <Filter>Objects\ExecuteObject\TextBox\speakText</Filter>
+    </ClInclude>
+    <ClInclude Include="charaTexture.h">
+      <Filter>Objects\ExecuteObject\Texture\Chara</Filter>
+    </ClInclude>
+    <ClInclude Include="textureCharaComponent.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="sound.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="createBgm.h">
+      <Filter>Objects\CreateObject\CreateBgm</Filter>
+    </ClInclude>
+    <ClInclude Include="bgm.h">
+      <Filter>Objects\ExecuteObject\Music</Filter>
+    </ClInclude>
+    <ClInclude Include="soundComponent.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="bgmOutput.h">
+      <Filter>Objects\ExecuteObject\Music</Filter>
+    </ClInclude>
+    <ClInclude Include="bgmOutputComponent.h">
+      <Filter>Components\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="createCharaAppearance.h">
+      <Filter>Objects\CreateObject\CreateChara</Filter>
+    </ClInclude>
+    <ClInclude Include="charaAppearanceOutput.h">
+      <Filter>Objects\ExecuteObject\Texture\Chara</Filter>
+    </ClInclude>
+    <ClInclude Include="charaAppearanceOutputComponent.h">
+      <Filter>Components\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="createCharaChange.h">
+      <Filter>Objects\CreateObject\CreateChara</Filter>
+    </ClInclude>
+    <ClInclude Include="charaChangeOutput.h">
+      <Filter>Objects\ExecuteObject\Texture\Chara</Filter>
+    </ClInclude>
+    <ClInclude Include="charaChangeOutputComponent.h">
+      <Filter>Components\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="outputParameter.h">
+      <Filter>Components\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="createCharaExit.h">
+      <Filter>Objects\CreateObject\CreateChara</Filter>
+    </ClInclude>
+    <ClInclude Include="charaExitOutput.h">
+      <Filter>Objects\ExecuteObject\Texture\Chara</Filter>
+    </ClInclude>
+    <ClInclude Include="charaExitOutputComponent.h">
+      <Filter>Components\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="createGameStop.h">
+      <Filter>Objects\CreateObject\CreateGameStop</Filter>
+    </ClInclude>
+    <ClInclude Include="gameStopOutput.h">
+      <Filter>Objects\ExecuteObject\GameStop</Filter>
+    </ClInclude>
+    <ClInclude Include="gameStopOutputComponent.h">
+      <Filter>Components\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="createBranchButton.h">
+      <Filter>Objects\CreateObject\CreateBranchButton</Filter>
+    </ClInclude>
+    <ClInclude Include="createRavel.h">
+      <Filter>Objects\CreateObject\CreateRavel</Filter>
+    </ClInclude>
+    <ClInclude Include="branchButtonOutput.h">
+      <Filter>Objects\ExecuteObject\Button\BranchButton</Filter>
+    </ClInclude>
+    <ClInclude Include="branchButtonOutputComponent.h">
+      <Filter>Components\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="branchButton.h">
+      <Filter>Objects\ExecuteObject\Button\BranchButton</Filter>
+    </ClInclude>
+    <ClInclude Include="branchButtonComponent.h">
+      <Filter>Components\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="createJump.h">
+      <Filter>Objects\CreateObject\CreateJump</Filter>
+    </ClInclude>
+    <ClInclude Include="jumpOutput.h">
+      <Filter>Objects\ExecuteObject\Jump</Filter>
+    </ClInclude>
+    <ClInclude Include="jumpOutputComponent.h">
+      <Filter>Components\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="createSe.h">
+      <Filter>Objects\CreateObject\CreateSE</Filter>
+    </ClInclude>
+    <ClInclude Include="se.h">
+      <Filter>Objects\ExecuteObject\Music</Filter>
+    </ClInclude>
+    <ClInclude Include="seOutput.h">
+      <Filter>Objects\ExecuteObject\Music</Filter>
+    </ClInclude>
+    <ClInclude Include="seOutputComponent.h">
+      <Filter>Components\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="projectSaveButton.h">
+      <Filter>Objects\CreateObject\ProjectSaveButton</Filter>
+    </ClInclude>
+    <ClInclude Include="saveButtonComponent.h">
+      <Filter>Components\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="yamlConvert.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="projectLoad.h">
+      <Filter>Objects\ProjectLoad</Filter>
+    </ClInclude>
+    <ClInclude Include="projectLoadComponent.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="shader\common.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="shader\unlitTexturePS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="shader\unlitTextureVS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="shader\charaTexturePS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="shader\charaTextureVS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>
