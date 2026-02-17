@@ -1,7 +1,7 @@
-﻿  compilation object save succeeded; see C:\Users\takus\Desktop\新しいフォルダー\sln\shader\charaTexturePS.cso
-  compilation object save succeeded; see C:\Users\takus\Desktop\新しいフォルダー\sln\shader\charaTextureVS.cso
-  compilation object save succeeded; see C:\Users\takus\Desktop\新しいフォルダー\sln\shader\unlitTexturePS.cso
-  compilation object save succeeded; see C:\Users\takus\Desktop\新しいフォルダー\sln\shader\unlitTextureVS.cso
+﻿  compilation object save succeeded; see C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\shader\charaTexturePS.cso
+  compilation object save succeeded; see C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\shader\charaTextureVS.cso
+  compilation object save succeeded; see C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\shader\unlitTexturePS.cso
+  compilation object save succeeded; see C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\shader\unlitTextureVS.cso
   animationModel.cpp
   bgm.cpp
   bgmOutput.cpp
@@ -57,7 +57,7 @@
   player.cpp
   playButton.cpp
   projectLoad.cpp
-C:\Users\takus\Desktop\新しいフォルダー\sln\projectLoadComponent.h(244,35): warning C4101: 'e': ローカル変数は 1 度も使われていません。
+C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\projectLoadComponent.h(244,35): warning C4101: 'e': ローカル変数は 1 度も使われていません。
   (ソース ファイル 'projectLoad.cpp' をコンパイルしています)
   
   projectSaveButton.cpp
@@ -84,8 +84,9 @@ C:\Users\takus\Desktop\新しいフォルダー\sln\projectLoadComponent.h(244,3
   titlePaper.cpp
   titleSkydome.cpp
   コード生成しています。
-  Previous IPDB not found, fall back to full compilation.
-  All 6419 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  6384 of 6419 functions (99.5%) were compiled, the rest were copied from previous compilation.
+    61 functions were new in current compilation
+    2 functions had inline decision re-evaluated but remain unchanged
   コード生成が終了しました。
 DirectXTex_Release.lib(DirectXTexD3D11.obj) : warning LNK4099: PDB '' が 'DirectXTex_Release.lib(DirectXTexD3D11.obj)' で、または '' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
 DirectXTex_Release.lib(DirectXTexWIC.obj) : warning LNK4099: PDB '' が 'DirectXTex_Release.lib(DirectXTexWIC.obj)' で、または '' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
@@ -97,4 +98,4 @@ DirectXTex_Release.lib(DirectXTexMipMaps.obj) : warning LNK4099: PDB '' が 'Dir
 DirectXTex_Release.lib(BC.obj) : warning LNK4099: PDB '' が 'DirectXTex_Release.lib(BC.obj)' で、または '' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
 DirectXTex_Release.lib(BC4BC5.obj) : warning LNK4099: PDB '' が 'DirectXTex_Release.lib(BC4BC5.obj)' で、または '' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
 DirectXTex_Release.lib(BC6HBC7.obj) : warning LNK4099: PDB '' が 'DirectXTex_Release.lib(BC6HBC7.obj)' で、または '' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
-  Project1.vcxproj -> C:\Users\takus\Desktop\新しいフォルダー\sln\x64\Release\Project1.exe
+  Project1.vcxproj -> C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\x64\Release\Project1.exe

@@ -2,21 +2,21 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Users\takus\Desktop\新しいフォルダー\sln\x64\Release\Project1.exe</FullPath>
+      <FullPath>C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\x64\Release\Project1.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles>
     <ContentFile>
-      <FullPath>C:\Users\takus\Desktop\新しいフォルダー\sln\shader\charaTexturePS.cso</FullPath>
+      <FullPath>C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\shader\charaTexturePS.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>C:\Users\takus\Desktop\新しいフォルダー\sln\shader\charaTextureVS.cso</FullPath>
+      <FullPath>C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\shader\charaTextureVS.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>C:\Users\takus\Desktop\新しいフォルダー\sln\shader\unlitTexturePS.cso</FullPath>
+      <FullPath>C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\shader\unlitTexturePS.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>C:\Users\takus\Desktop\新しいフォルダー\sln\shader\unlitTextureVS.cso</FullPath>
+      <FullPath>C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\shader\unlitTextureVS.cso</FullPath>
     </ContentFile>
   </ContentFiles>
   <SatelliteDlls />
