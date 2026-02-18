@@ -1,0 +1,171 @@
+objectEntry:
+  - objectType: BgTexture
+    listObjectData:
+      path: C:\Users\takus\Documents\GitHub\NoteBookEngine\exe\myProject\demo\nb_asset\BuildBgTexture\04_Station.jpg
+  - objectType: BGM
+    listObjectData:
+      path: C:\Users\takus\Documents\GitHub\NoteBookEngine\exe\myProject\demo\nb_asset\BuildBgm\05_Friend_BGM.mp3
+  - objectType: SpeakText
+    listObjectData:
+      name: 友人
+      text: 「お前、最近どーなんだよ」
+  - objectType: SpeakText
+    listObjectData:
+      name: 海村  灯馬
+      text: 「最近......っておい！」
+  - objectType: SpeakText
+    listObjectData:
+      name: ""
+      text: 友人は、からかうような口ぶりで、俺に話しかけてくる
+  - objectType: SpeakText
+    listObjectData:
+      name: 友人
+      text: 「水野さんとは話したのかよって」
+  - objectType: SpeakText
+    listObjectData:
+      name: 海村 灯馬
+      text: 「まだそんなに話せてないし、声でけえよ」
+  - objectType: SpeakText
+    listObjectData:
+      name: ""
+      text: 俺らが話している目の前を、水野さんが通過して、とても焦った
+  - objectType: SpeakText
+    listObjectData:
+      name: 友人
+      text: 「おい！あれって、お前がいつも乗ってる電車じゃね！？」
+  - objectType: SpeakText
+    listObjectData:
+      name: 海村 灯馬
+      text: 「まぁ、そうだけど...」
+  - objectType: SpeakText
+    listObjectData:
+      name: 友人
+      text: 「そんなの服買ってる場合じゃねぇって！」
+  - objectType: SpeakText
+    listObjectData:
+      name: ""
+      text: 友人が後ろから俺を押す
+  - objectType: SpeakText
+    listObjectData:
+      name: 海村 灯馬
+      text: 「おいバカ！まだ心の準備が！」
+  - objectType: SpeakText
+    listObjectData:
+      name: 友人
+      text: 「なーに言ってんだ、これで何回目だよ、その発言」
+  - objectType: SpeakText
+    listObjectData:
+      name: ""
+      text: 俺は友人にめちゃくちゃ押された
+  - objectType: SpeakText
+    listObjectData:
+      name: ""
+      text: 気づいたら水野さんの後ろ姿が、目の前にあった
+  - objectType: SpeakText
+    listObjectData:
+      name: ""
+      text: 俺は勇気を振り絞って、水野さんに話しかける
+  - objectType: SpeakText
+    listObjectData:
+      name: 海村 灯馬
+      text: 「水野さん」
+  - objectType: SpeakText
+    listObjectData:
+      name: 水野 明香里
+      text: 「おー海村さんじゃん！」
+  - objectType: BgTexture
+    listObjectData:
+      path: C:\Users\takus\Documents\GitHub\NoteBookEngine\exe\myProject\demo\nb_asset\BuildBgTexture\05_StationMizuno.jpg
+  - objectType: BGM
+    listObjectData:
+      path: C:\Users\takus\Documents\GitHub\NoteBookEngine\exe\myProject\demo\nb_asset\BuildBgm\03_Mizuno_BGM.mp3
+  - objectType: SpeakText
+    listObjectData:
+      name: ""
+      text: 第一声はとても大事だ...考えろ！俺！
+  - objectType: BranchButton
+    listObjectData:
+      targetName: 告白する
+      text: 告白する
+      path: C:\Users\takus\Documents\GitHub\NoteBookEngine\exe\myProject\demo\nb_asset\BuildBranchButton\branchButton.png
+      position:
+        x: 621
+        y: 280
+      scale:
+        x: 141
+        y: 40
+      textColor:
+        x: 1
+        y: 0.544401526
+        z: 0.934914529
+  - objectType: BranchButton
+    listObjectData:
+      targetName: 告白しない
+      text: 告白しない
+      path: C:\Users\takus\Documents\GitHub\NoteBookEngine\exe\myProject\demo\nb_asset\BuildBranchButton\branchButton.png
+      position:
+        x: 621
+        y: 456
+      scale:
+        x: 141
+        y: 40
+      textColor:
+        x: 1
+        y: 1
+        z: 1
+  - objectType: GameStop
+    listObjectData: ~
+  - objectType: Ravel
+    listObjectData:
+      name: 告白する
+  - objectType: SpeakText
+    listObjectData:
+      name: 海村 灯馬
+      text: あの！
+  - objectType: SpeakText
+    listObjectData:
+      name: 水野 明香里
+      text: ん？
+  - objectType: SpeakText
+    listObjectData:
+      name: 海村 灯馬
+      text: す...
+  - objectType: SpeakText
+    listObjectData:
+      name: 水野 明香里
+      text: す？
+  - objectType: SpeakText
+    listObjectData:
+      name: 海村 灯馬
+      text: 凄い久しぶりだね
+  - objectType: Jump
+    listObjectData:
+      targetName: スキップ
+  - objectType: Ravel
+    listObjectData:
+      name: 告白しない
+  - objectType: SpeakText
+    listObjectData:
+      name: 海村 灯馬
+      text: 「久しぶりだね」
+  - objectType: Ravel
+    listObjectData:
+      name: スキップ
+  - objectType: SpeakText
+    listObjectData:
+      name: 水野 明香里
+      text: 「そうだね、久しぶりに話しかけてくれたね～」
+  - objectType: SpeakText
+    listObjectData:
+      name: ""
+      text: 俺は頭の中で、次に放つ言葉を考える
+  - objectType: SpeakText
+    listObjectData:
+      name: ""
+      text: っと今回はここまで
+  - objectType: SpeakText
+    listObjectData:
+      name: ""
+      text: 本編はノベルゲームコレクションにて公開中！
+charaNames:
+  []
