@@ -1,0 +1,71 @@
+objectEntry:
+  - objectType: BgTexture
+    listObjectData:
+      path: C:\Users\takus\Documents\GitHub\NoteBookEngine\exe\myProject\project1\nb_asset\BuildBgTexture\YumenoawaBG.png
+  - objectType: BGM
+    listObjectData:
+      path: C:\Users\takus\Documents\GitHub\NoteBookEngine\exe\myProject\project1\nb_asset\BuildBgm\KotoneBGM_maou_bgm_healing08.mp3
+  - objectType: SpeakText
+    listObjectData:
+      name: ことね
+      text: 「それでは！面接を始まます」
+  - objectType: BranchButton
+    listObjectData:
+      targetName: 魚
+      text: さかな
+      path: C:\Users\takus\Documents\GitHub\NoteBookEngine\exe\myProject\project1\nb_asset\BuildBranchButton\branchButton.png
+      position:
+        x: 906
+        y: 372
+      scale:
+        x: 90
+        y: 40
+      textColor:
+        x: 0.663242936
+        y: 0.652509689
+        z: 1
+  - objectType: BranchButton
+    listObjectData:
+      targetName: 肉
+      text: にく
+      path: C:\Users\takus\Documents\GitHub\NoteBookEngine\exe\myProject\project1\nb_asset\BuildBranchButton\branchButton.png
+      position:
+        x: 332
+        y: 372
+      scale:
+        x: 90
+        y: 40
+      textColor:
+        x: 1
+        y: 0.548262537
+        z: 0.548262537
+  - objectType: GameStop
+    listObjectData: ~
+  - objectType: Ravel
+    listObjectData:
+      name: 魚
+  - objectType: SpeakText
+    listObjectData:
+      name: ことね
+      text: 「ぶぶー！はずれ！」
+  - objectType: Jump
+    listObjectData:
+      targetName: 終了
+  - objectType: Ravel
+    listObjectData:
+      name: 肉
+  - objectType: SpeakText
+    listObjectData:
+      name: ことね
+      text: 「ピンポーン！正解だよ！合格！」
+  - objectType: Ravel
+    listObjectData:
+      name: 終了
+  - objectType: SpeakText
+    listObjectData:
+      name: ことね
+      text: 「これで面接を終わりにします！」
+  - objectType: GameStop
+    listObjectData: ~
+charaNames:
+  []
