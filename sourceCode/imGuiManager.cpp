@@ -821,12 +821,17 @@ void ImGuiManager::CharaEditorOpem()
             /* マウスポジションの差分（全体の拡大縮小なのでyの値だけで十分） */
             float delta = ImGui::GetIO().MouseDelta.y;
 
+            /* 綺麗な拡大縮小にするために比率計算 */
+			float scaleFactor = 0.005f;   // 拡大縮小の感度
+            float deltaX = delta * m_charaScale.x * scaleFactor;
+			float deltaY = delta * m_charaScale.y * scaleFactor;
+
             /* 上側はマイナス */
             float sign = (i == 0 || i == 1) ? -1.0f : 1.0f;
 
             /* 拡大縮小 */
-            m_charaScale.x += delta * sign;
-            m_charaScale.y += delta * sign;
+            m_charaScale.x += deltaX * sign;
+            m_charaScale.y += deltaY * sign;
 
             m_charaScale.x = std::max(m_charaScale.x, 1.0f);
             m_charaScale.y = std::max(m_charaScale.y, 1.0f);
