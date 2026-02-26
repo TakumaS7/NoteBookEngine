@@ -84,6 +84,7 @@ public:
         m_bgTextureOutputComponent->BgTextureIndexSkip(index);
         m_charaAppearanceOutputComponent->CharaAppearanceIndexSkip(index);
         m_charaChangeOutputComponent->CharaChangeIndexSkip(index);
+        m_charaExitOutputComponent->CharaExitIndexSkip(index);
         m_bgmOutputComponent->BgmIndexSkip(index);
         m_seOutputComponent->SeIndexSkip(index);
         m_brachButtonOutputComponent->BranchButtonIndexSkip(index);
@@ -189,7 +190,9 @@ public:
     void Update() override
     {
         /* 全ての処理が終わったら停止 */
-        if (isFinished) { return; }
+        if (isFinished) { 
+            return; 
+        }
 
         /* 全て終わったら停止 */
         if (m_currentIndex >= static_cast<int>(m_listObjects.size()))
@@ -293,13 +296,6 @@ public:
                 m_currentIndex++;   // インデックスを増加
             }
 
-            /* 全て終わったら停止 */
-            if (m_currentIndex >= static_cast<int>(m_listObjects.size()))
-            {
-                isFinished = true;
-                return;
-            }
-
             /* ラベルへ飛ぶ処理 */
             if (m_brachButtonOutputComponent->GetButtonPush() == true)
             {
@@ -311,6 +307,13 @@ public:
             {
                 SkipIndex(m_jumpOutputComponent->GetTargetRavelIndex()); // インデックスを飛ばす
                 m_jumpOutputComponent->JumpFragOff();
+            }
+
+            /* 全て終わったら停止 */
+            if (m_currentIndex >= static_cast<int>(m_listObjects.size()))
+            {
+                isFinished = true;
+                return;
             }
 
             /* オブジェクトごとにタイプを判別して処理分岐を行う */
@@ -355,13 +358,6 @@ public:
                 m_currentIndex++;                                               // インデックスを増加
             }
 
-            /* 全て終わったら停止 */
-            if (m_currentIndex >= static_cast<int>(m_listObjects.size()))
-            {
-                isFinished = true;
-                return;
-            }
-
             /* ラベルへ飛ぶ処理 */
             if (m_brachButtonOutputComponent->GetButtonPush() == true)
             {
@@ -373,6 +369,13 @@ public:
             {
                 SkipIndex(m_jumpOutputComponent->GetTargetRavelIndex()); // インデックスを飛ばす
                 m_jumpOutputComponent->JumpFragOff();
+            }
+
+            /* 全て終わったら停止 */
+            if (m_currentIndex >= static_cast<int>(m_listObjects.size()))
+            {
+                isFinished = true;
+                return;
             }
 
             /* オブジェクトごとにタイプを判別して処理分岐を行う */

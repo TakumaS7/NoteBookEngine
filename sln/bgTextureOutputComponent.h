@@ -71,7 +71,18 @@ public:
                 /* falseだったら探さない */
                 if (find == false) { break; }
 
-                m_currentIndex = i; // 次に表示する画像のインデックスを代入
+				unsigned int oldCurrentIndex = m_currentIndex - 1;  // 古いインデックスを保存（カレントを１足していたため、１引く）
+				if (m_currentIndex == 0) { oldCurrentIndex = 0; }   // 最初のインデックスだったら、古いインデックスも最初のインデックスにする
+                
+                m_currentIndex = i;                                 // 次に表示する画像のインデックスを代入
+
+                /* 同じインデックスの場合は読み込まずに終える */
+                if (oldCurrentIndex == m_currentIndex)
+                {
+					m_crossFadeState = CROSS_FADE_END;  // クロスフェード状態を終わりへ
+                    
+                    break;
+                }
 
                 /* ここで再度見えていないほうのスプライトに画像読み込みを行う */
                 if (m_alpha <= 0.0f)
@@ -82,7 +93,7 @@ public:
                         m_bgTexture->GetComponent<TextureComponent>()->SetTexture(m_listBgTextureParameter[m_currentIndex].path);
                     }
                 }
-                else if (m_anotherAlpha <= 0.0f)
+                else if (m_anotherAlpha <= 0.0f && m_listBgTextureParameter.size() >= 2)    //  二枚目が存在し、透明の場合
                 {
                     if (m_currentIndex < m_listBgTextureParameter.size())
                     {
@@ -90,7 +101,7 @@ public:
                         m_anotherBgTexture->GetComponent<TextureComponent>()->SetTexture(m_listBgTextureParameter[m_currentIndex].path);
                     }
                 }
-
+                
                 /* まだ読み込みが一回もされてないとき */
                 if (m_firstLoadEnd == false)
                 {
@@ -100,6 +111,7 @@ public:
                     m_currentIndex++;   // 次のインデックスへ
                     m_anotherBgTexture->GetComponent<TextureComponent>()->SetTexture(m_listBgTextureParameter[m_currentIndex].path);
                 }
+
 
                 find = false;			// 一回読込処理が走ったら、終了する
                 m_isFinished = false;	// 終了フラグをオフにする

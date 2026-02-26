@@ -76,14 +76,20 @@ public:
                 m_currentIndex = i; // 次に表示するテキストのインデックスを代入
 
                 /* 先頭じゃない場合は１を引く（LeftClickで1足すため） */
-                if (m_firstLoad == true)
+                if (m_firstLoad == true && m_currentIndex > 0)
                 {
                     m_currentIndex += -1;
                 }
 
+                /* 先頭の場合 */
+                if (i == 0)
+                {
+                    m_firstLoad = false;
+                }
+
                 /* ここで再度テキストの読み込みを行う */
-                m_currentText = m_listTextParameter[m_currentIndex].speakText->GetText();    // 次の文を取得
-                m_currentName = m_listTextParameter[m_currentIndex].speakText->GetName();    // 次の名前を取得
+                m_currentText = m_listTextParameter[m_currentIndex].speakText->GetText();   // 次の文を取得
+                m_currentName = m_listTextParameter[m_currentIndex].speakText->GetName();   // 次の名前を取得
 
                 find = false;			// 一回読込処理が走ったら、終了する
                 m_isFinished = false;	// 終了フラグをオフにする

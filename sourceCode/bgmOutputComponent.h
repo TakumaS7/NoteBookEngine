@@ -63,9 +63,16 @@ public:
                 m_currentIndex = i; // 次に流すBGMのインデックスを代入
 
                 /* 先頭じゃない場合は１を引く（LeftClickで1足すため） */
-                if (m_firstLoadEnd == true)
+                if (m_firstLoad == true && m_currentIndex > 0)
                 {
                     m_currentIndex += -1;
+                }
+
+                /* 先頭の場合 */
+                if (i == 0)
+                {
+                    m_firstLoad = false;
+                    m_firstLoadEnd = false;
                 }
 
                 if (m_currentIndex < m_listBgmParameter.size())

@@ -98,6 +98,7 @@ public:
             }
 
             m_alpha += 0.01f;
+            m_parameters[m_currentIndex].charaTexture->GetComponent<TextureCharaComponent>()->SetTexture(m_parameters[m_currentIndex].path);
             m_parameters[m_currentIndex].charaTexture->GetComponent<TextureCharaComponent>()->SetDrawable(true);
             m_parameters[m_currentIndex].charaTexture->GetComponent<TextureCharaComponent>()->SetAlpha(m_alpha);
 
