@@ -53,6 +53,8 @@ private:
 		if (string == "Ravel") { return ObjectType::Ravel; }
 		if (string == "BranchButton") { return ObjectType::BranchButton; }
 		if (string == "Jump") { return ObjectType::Jump; }
+		if (string == "SpeakTextHidden") { return ObjectType::SpeakTextHidden; }
+		if (string == "SpeakTextDisplay") { return ObjectType::SpeakTextDisplay; }
 
 		return ObjectType::Type_None;
 	}
@@ -237,6 +239,17 @@ private:
 						createList->AddJump(targetName);
 						break;
 					}
+					case ObjectType::SpeakTextHidden:
+					{
+						createList->AddSpeakTextHidden();
+						break;
+					}
+					case ObjectType::SpeakTextDisplay:
+					{
+						createList->AddSpeakTextDisplay();
+						break;
+					}
+
 					default:
 						continue;
 					}

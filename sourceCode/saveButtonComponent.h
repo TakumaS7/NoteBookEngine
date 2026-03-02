@@ -39,6 +39,8 @@
 #include "createRavel.h"
 #include "createBranchButton.h"
 #include "createJump.h"
+#include "createSpeakTextHidden.h"
+#include "createSpeakTextDisplay.h"
 
 namespace fs = std::experimental::filesystem;
 
@@ -241,6 +243,16 @@ public:
 
 				parameter["targetName"] = Utf16ToUtf8(jump->GetTargetRavelName());	// 目的のラベル名
 			}
+			else if (entry.objectType == ObjectType::SpeakTextHidden)	// テキストフレーム非表示
+			{
+				CreateSpeakTextHidden* speakTextHidden = dynamic_cast<CreateSpeakTextHidden*>(entry.listObject);
+				if (speakTextHidden == nullptr) { continue; }
+			}
+			else if (entry.objectType == ObjectType::SpeakTextDisplay)	// テキストフレーム表示
+			{
+				CreateSpeakTextDisplay* speakTextDisplay = dynamic_cast<CreateSpeakTextDisplay*>(entry.listObject);
+				if (speakTextDisplay == nullptr) { continue; }
+			}
 
 			if (entry.objectType != ObjectType::Type_None)
 			{
@@ -301,6 +313,8 @@ public:
 		case ObjectType::Ravel: return "Ravel";
 		case ObjectType::BranchButton: return "BranchButton";
 		case ObjectType::Jump: return "Jump";
+		case ObjectType::SpeakTextHidden: return "SpeakTextHidden";
+		case ObjectType::SpeakTextDisplay: return "SpeakTextDisplay";
 		default: return"";
 		}
 	}

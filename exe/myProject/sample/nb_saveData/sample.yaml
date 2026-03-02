@@ -1,0 +1,75 @@
+objectEntry:
+  - objectType: Ravel
+    listObjectData:
+      name: くりかえし
+  - objectType: SpeakTextHidden
+    listObjectData: ~
+  - objectType: BgTexture
+    listObjectData:
+      path: C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\x64\myProject\project2\nb_asset\BuildBgTexture\TitleBG.png
+  - objectType: BranchButton
+    listObjectData:
+      targetName: はじめる
+      text: はじめる
+      path: C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\x64\myProject\project2\nb_asset\BuildBranchButton\branchButton.png
+      position:
+        x: 248
+        y: 610
+      scale:
+        x: 127
+        y: 28
+      textColor:
+        x: 1
+        y: 1
+        z: 1
+  - objectType: GameStop
+    listObjectData: ~
+  - objectType: Ravel
+    listObjectData:
+      name: はじめる
+  - objectType: BgTexture
+    listObjectData:
+      path: C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\x64\myProject\project2\nb_asset\BuildBgTexture\SchoolBG.png
+  - objectType: CharaAppearance
+    listObjectData:
+      name: 琴音
+      path: C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\x64\myProject\project2\nb_asset\BuildCharaTexture\kotone_normal.png
+      position:
+        x: 883
+        y: 438
+      rotation: 0
+      scale:
+        x: 199
+        y: 283
+  - objectType: BGM
+    listObjectData:
+      path: C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\x64\myProject\project2\nb_asset\BuildBgm\KotoneBGM_maou_bgm_healing08.mp3
+  - objectType: SpeakTextDisplay
+    listObjectData: ~
+  - objectType: SpeakText
+    listObjectData:
+      name: 琴音
+      text: こんにちは！
+  - objectType: CharaChange
+    listObjectData:
+      name: 琴音
+      path: C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\x64\myProject\project2\nb_asset\BuildCharaTexture\kotone_think.png
+      position:
+        x: 883
+        y: 438
+      rotation: 0
+      scale:
+        x: 199
+        y: 283
+  - objectType: SpeakText
+    listObjectData:
+      name: 琴音
+      text: これはサンプルです！
+  - objectType: CharaExit
+    listObjectData:
+      name: 琴音
+  - objectType: Jump
+    listObjectData:
+      targetName: くりかえし
+charaNames:
+  - name: 琴音

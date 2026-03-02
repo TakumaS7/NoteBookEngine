@@ -237,11 +237,13 @@ void Text::Uninit()
 
 
 
-void Text::Draw(const wchar_t* text, Vector3 position, Vector3 size)
+void Text::Draw(const wchar_t* text, Vector3 position, Vector3 size, D2D1::ColorF color)
 {
     m_D2DContext->BeginDraw();
 
     D2D1_RECT_F layoutRect = D2D1::RectF(position.x - size.x, position.y - size.y, position.x + size.x, position.y + size.y); // 左・上・右・下
+
+    m_Brush->SetColor(color);   // 色を更新
 
     m_D2DContext->DrawText(
         text,

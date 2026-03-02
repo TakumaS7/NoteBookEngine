@@ -160,6 +160,8 @@
     <ClCompile Include="createScene.cpp" />
     <ClCompile Include="createGameStop.cpp" />
     <ClCompile Include="createSe.cpp" />
+    <ClCompile Include="createSpeakTextDisplay.cpp" />
+    <ClCompile Include="createSpeakTextHidden.cpp" />
     <ClCompile Include="cube.cpp" />
     <ClCompile Include="camera.cpp" />
     <ClCompile Include="debug.cpp" />
@@ -200,6 +202,8 @@
     <ClCompile Include="sound.cpp" />
     <ClCompile Include="speakText.cpp" />
     <ClCompile Include="createList.cpp" />
+    <ClCompile Include="speakTextDisplayOutput.cpp" />
+    <ClCompile Include="speakTextHiddenOutput.cpp" />
     <ClCompile Include="square.cpp" />
     <ClCompile Include="text.cpp" />
     <ClCompile Include="textBox.cpp" />
@@ -247,6 +251,8 @@
     <ClInclude Include="createJump.h" />
     <ClInclude Include="createRavel.h" />
     <ClInclude Include="createSe.h" />
+    <ClInclude Include="createSpeakTextDisplay.h" />
+    <ClInclude Include="createSpeakTextHidden.h" />
     <ClInclude Include="debug.h" />
     <ClInclude Include="deleteObjectButtonComponent.h" />
     <ClInclude Include="deleteSpeakText.h" />
@@ -325,6 +331,10 @@
     <ClInclude Include="sound.h" />
     <ClInclude Include="speakText.h" />
     <ClInclude Include="createList.h" />
+    <ClInclude Include="speakTextDislayOutputComponent.h" />
+    <ClInclude Include="speakTextDisplayOutput.h" />
+    <ClInclude Include="speakTextHiddenOutput.h" />
+    <ClInclude Include="speakTextHiddenOutputComponent.h" />
     <ClInclude Include="square.h" />
     <ClInclude Include="squareVertex.h" />
     <ClInclude Include="text.h" />

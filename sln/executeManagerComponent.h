@@ -25,6 +25,8 @@
 #include "gameStopOutput.h"
 #include "branchButtonOutput.h"
 #include "jumpOutput.h"
+#include "speakTextHiddenOutput.h"
+#include "speakTextDisplayOutput.h"
 
 #include "bgTextureOutputComponent.h"
 #include "charaAppearanceOutputComponent.h"
@@ -36,6 +38,8 @@
 #include "gameStopOutputComponent.h"
 #include "branchButtonOutputComponent.h"
 #include "jumpOutputComponent.h"
+#include "speakTextHiddenOutputComponent.h"
+#include "speakTextDislayOutputComponent.h"
 
 #include "gameObject.h"
 #include "mouse.h"
@@ -47,16 +51,18 @@ private:
 
     bool isFinished = false;    // 終了フラグ
 
-    BgTextureOutput* m_bgTextureOutput;             // 背景
-    CharaAppearanceOutput* m_charaAppearanceOutput; // キャラ登場
-    CharaChangeOutput* m_charaChangeOutput;         // キャラ状態変更
-    CharaExitOutput* m_charaExitOutput;             // キャラ退場
-    TextBox* m_textBox;                             // テキスト
-    BgmOutput* m_bgmOutput;                         // BGM
-    SeOutput* m_seOutput;                           // SE
-    GameStopOutput* m_gameStopOutput;               // ゲーム停止
-    BranchButtonOutput* m_brachButtonOutput;        // 分岐ボタン
-    JumpOutput* m_jumpOutput;                       // ジャンプ
+    BgTextureOutput* m_bgTextureOutput;                 // 背景
+    CharaAppearanceOutput* m_charaAppearanceOutput;     // キャラ登場
+    CharaChangeOutput* m_charaChangeOutput;             // キャラ状態変更
+    CharaExitOutput* m_charaExitOutput;                 // キャラ退場
+    TextBox* m_textBox;                                 // テキスト
+    BgmOutput* m_bgmOutput;                             // BGM
+    SeOutput* m_seOutput;                               // SE
+    GameStopOutput* m_gameStopOutput;                   // ゲーム停止
+    BranchButtonOutput* m_brachButtonOutput;            // 分岐ボタン
+    JumpOutput* m_jumpOutput;                           // ジャンプ
+    SpeakTextHiddenOutput* m_speakTextHiddenOutput;     // テキストフレーム非表示
+    SpeakTextDisplayOutput* m_speakTextDisplayOutput;   // テキストフレーム表示
 
     BgTextureOutputComponent* m_bgTextureOutputComponent;               // 背景
     CharaAppearanceOutputComponent* m_charaAppearanceOutputComponent;   // キャラ登場
@@ -68,6 +74,8 @@ private:
     GameStopOutputComponent* m_gameStopOutputComponent;                 // ゲーム停止
     BranchButtonOutputComponent* m_brachButtonOutputComponent;          // 分岐ボタン
     JumpOutputComponent* m_jumpOutputComponent;                         // ジャンプ
+    SpeakTextHiddenOutputComponent* m_speakTextHiddenOutputComponent;   // テキストフレーム非表示
+    SpeakTextDisplayOutputComponent* m_speakTextDisplayOutputComponent; // テキストフレーム表示
 
     unsigned int m_currentIndex = 0;    // 現在のインデックス（今何を表示しているかの管理）
 
@@ -75,6 +83,7 @@ private:
     bool m_autoAddindex = true;     // 自動アニメーションの際のリストインデックス加算フラグ
     bool m_textFullShow = true;     // テキスト全表示フラグ
     bool m_autoAnim = false;        // オートで動くフラグ（背景やキャラの自動クロスフェード）
+    bool m_textHidden = true;       // テキストが非表示ならtrue
 
 public:
     /* インデックスが一気に飛ぶ際に使用（例：分岐する選択肢） */
@@ -99,7 +108,15 @@ public:
         if (m_listObjects[m_currentIndex].objectType == ObjectType::SpeakText)
         {
             m_textBoxComponent->LeftClickText();
-            m_autoAnim = false;
+
+            if (m_textBoxComponent->GetDisplay() == true)
+            {
+                m_autoAnim = false;
+            }
+            else if (m_textBoxComponent->GetDisplay() == false)
+            {
+                m_autoAnim = true;
+            }
         }
         else if (m_listObjects[m_currentIndex].objectType == ObjectType::BgTexture)
         {
@@ -152,6 +169,16 @@ public:
             m_jumpOutputComponent->SearchTargetRavelIndex();
             m_autoAnim = true;
         }
+        else if (m_listObjects[m_currentIndex].objectType == ObjectType::SpeakTextHidden)
+        {
+            m_speakTextHiddenOutputComponent->LeftClickSpeakTextHidden();
+            m_autoAnim = true;
+        }
+        else if (m_listObjects[m_currentIndex].objectType == ObjectType::SpeakTextDisplay)
+        {
+            m_speakTextDisplayOutputComponent->LeftClickSpeakTextDisplay();
+            m_autoAnim = true;
+        }
     }
 
     void Init() override
@@ -170,6 +197,8 @@ public:
         m_gameStopOutput = Manager::GetDebugScene()->AddGameObject<GameStopOutput>(OBJECT_2D);
         m_brachButtonOutput = Manager::GetDebugScene()->AddGameObject<BranchButtonOutput>(OBJECT_2D);
         m_jumpOutput = Manager::GetDebugScene()->AddGameObject<JumpOutput>(OBJECT_2D);
+        m_speakTextHiddenOutput = Manager::GetDebugScene()->AddGameObject<SpeakTextHiddenOutput>(OBJECT_2D);
+        m_speakTextDisplayOutput = Manager::GetDebugScene()->AddGameObject<SpeakTextDisplayOutput>(OBJECT_2D);
 
         if (createList) {
 
@@ -212,6 +241,8 @@ public:
         m_gameStopOutputComponent = m_gameStopOutput->GetComponent<GameStopOutputComponent>();
         m_brachButtonOutputComponent = m_brachButtonOutput->GetComponent<BranchButtonOutputComponent>();
         m_jumpOutputComponent = m_jumpOutput->GetComponent<JumpOutputComponent>();
+        m_speakTextHiddenOutputComponent = m_speakTextHiddenOutput->GetComponent<SpeakTextHiddenOutputComponent>();
+        m_speakTextDisplayOutputComponent = m_speakTextDisplayOutput->GetComponent<SpeakTextDisplayOutputComponent>();
 
 
         /* テキストがある場合だけ全文表示チェック */
@@ -230,7 +261,9 @@ public:
             m_seOutputComponent->CheckSeLoadNone() == true &&                           // ロードしていない状態に戻ったか
             m_gameStopOutputComponent->GetGameStop() == false &&                        // ゲーム停止していない状態に戻ったか
             m_brachButtonOutputComponent->CheckBranchButtonDisplayNone() == true &&     // なにもしていない状態に戻ったか
-            m_jumpOutputComponent->CheckJumpStateNone() == true;                        // なにもしていない状態に戻ったか
+            m_jumpOutputComponent->CheckJumpStateNone() == true &&                      // なにもしていない状態に戻ったか
+            m_speakTextHiddenOutputComponent->CheckHiddenNone() == true &&              // なにもしてない状態に戻ったか
+            m_speakTextDisplayOutputComponent->CheckDisplayNone() == true;              // なにもしてない状態に戻ったか
 
         m_autoAddindex = m_textFullShow &&
             m_gameStopOutputComponent->GetGameStop() == false &&                            // ゲーム停止していない状態に戻ったか
@@ -241,8 +274,12 @@ public:
                 m_bgmOutputComponent->CheckBgmLoadEnd() == true ||                          // ロードが終わった状態になったか
                 m_seOutputComponent->CheckSeLoadEnd() == true ||                            // ロードが終わった状態になったか
                 m_brachButtonOutputComponent->CheckBranchButtonDisplayEnd() == true ||      // 表示が終わった状態になったか
-                m_jumpOutputComponent->CheckJumpStateEnd() == true);                        // ジャンプが終わった状態になったか
+                m_jumpOutputComponent->CheckJumpStateEnd() == true ||                       // ジャンプが終わった状態になったか
+                m_speakTextHiddenOutputComponent->CheckHiddenEnd() == true ||               // 非表示処理が終わった状態になったか
+                m_speakTextDisplayOutputComponent->CheckDisplayEnd() == true);              // 表示処理が終わった状態になったか
 
+        m_textHidden = m_listObjects[m_currentIndex].objectType == ObjectType::SpeakText &&     // テキストオブジェクトであるか
+			m_textBoxComponent->GetDisplay() == false;                                          // 非表示か
 
         /* 最初の背景・キャラの登場する際、BGMを流す際はオートフラグtrue */
         if (m_listObjects[m_currentIndex].objectType == ObjectType::BgTexture &&
@@ -322,7 +359,8 @@ public:
         else if (m_autoAnim == true)
         {
             /* 画像のクロスフェードが終わったら　かつ　背景・キャラフェードが終わっているなら */
-            if (m_autoAddindex)
+            /* またはテキストが非表示の場合 */
+            if (m_autoAddindex || m_textHidden)
             {
                 /* テクスチャがリストの先頭の場合、最初のフェード処理が終わっているなら */
                 if (m_listObjects[m_currentIndex].objectType == ObjectType::BgTexture &&
@@ -355,6 +393,8 @@ public:
                 m_seOutputComponent->SetSeLoadNone();                           // ロード状態をNONEへリセット
                 m_brachButtonOutputComponent->SetBranchButtonDisplayNone();     // 表示状態をNONEへリセット
                 m_jumpOutputComponent->SetJumpStateNone();                      // ジャンプ状態をNONEへリセット
+                m_speakTextHiddenOutputComponent->SetHiddenNone();              // 非表示処理状態をNONEへリセット
+                m_speakTextDisplayOutputComponent->SetDisplayNone();            // 表示処理状態をNONEへリセット
                 m_currentIndex++;                                               // インデックスを増加
             }
 
@@ -392,6 +432,8 @@ public:
         m_seOutputComponent->SeAnim();
         m_brachButtonOutputComponent->BranchButtonAnim();
         m_jumpOutputComponent->JumpAnim();
+        m_speakTextHiddenOutputComponent->SpeakTextHiddenAnim();
+        m_speakTextDisplayOutputComponent->SpeakTextDisplayAnim();
     }
 
     void Draw() override {}

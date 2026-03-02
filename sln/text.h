@@ -58,7 +58,7 @@ private:
 public:
 	HRESULT Init(bool debug = false, D2D1::ColorF color = D2D1::ColorF::Black, float fontSize = 20.0f, TextAlignmentType textAlignmentType = TEXT_ALIGNMENT_LEADING, ParagraphAlignmentType paragraphAlignmentType = PARAGRAPH_ALIGNMENT_NEAR);
 	void Uninit();
-	void Draw(const wchar_t* text, Vector3 position, Vector3 size);
+	void Draw(const wchar_t* text, Vector3 position, Vector3 size, D2D1::ColorF color);
 };
 
 #endif //_TEXT_H

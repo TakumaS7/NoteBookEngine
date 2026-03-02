@@ -220,6 +220,18 @@
     <Filter Include="Objects\ProjectLoad">
       <UniqueIdentifier>{65ae19d4-d9e8-4b2b-a27f-6ac7eeab5b63}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Objects\CreateObject\CreateSpeakTextHidden">
+      <UniqueIdentifier>{c17212b9-2b54-4b88-a991-cf921748fda6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\ExecuteObject\TextBox\Hidden">
+      <UniqueIdentifier>{559e54a3-51bd-459f-b858-60ceec5109e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\CreateObject\CreateSpeakTextDisplay">
+      <UniqueIdentifier>{4eb597bc-ee8e-4830-9be1-be3dc5f77cbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\ExecuteObject\TextBox\Display">
+      <UniqueIdentifier>{a14e0c2d-7ceb-408d-a4e4-96b3c4ed45c5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -446,6 +458,18 @@
     </ClCompile>
     <ClCompile Include="projectLoad.cpp">
       <Filter>Objects\ProjectLoad</Filter>
+    </ClCompile>
+    <ClCompile Include="createSpeakTextHidden.cpp">
+      <Filter>Objects\CreateObject\CreateSpeakTextHidden</Filter>
+    </ClCompile>
+    <ClCompile Include="speakTextHiddenOutput.cpp">
+      <Filter>Objects\ExecuteObject\TextBox\Hidden</Filter>
+    </ClCompile>
+    <ClCompile Include="createSpeakTextDisplay.cpp">
+      <Filter>Objects\CreateObject\CreateSpeakTextDisplay</Filter>
+    </ClCompile>
+    <ClCompile Include="speakTextDisplayOutput.cpp">
+      <Filter>Objects\ExecuteObject\TextBox\Display</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -850,6 +874,24 @@
     </ClInclude>
     <ClInclude Include="projectLoadComponent.h">
       <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="createSpeakTextHidden.h">
+      <Filter>Objects\CreateObject\CreateSpeakTextHidden</Filter>
+    </ClInclude>
+    <ClInclude Include="speakTextHiddenOutput.h">
+      <Filter>Objects\ExecuteObject\TextBox\Hidden</Filter>
+    </ClInclude>
+    <ClInclude Include="speakTextHiddenOutputComponent.h">
+      <Filter>Components\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="createSpeakTextDisplay.h">
+      <Filter>Objects\CreateObject\CreateSpeakTextDisplay</Filter>
+    </ClInclude>
+    <ClInclude Include="speakTextDisplayOutput.h">
+      <Filter>Objects\ExecuteObject\TextBox\Display</Filter>
+    </ClInclude>
+    <ClInclude Include="speakTextDislayOutputComponent.h">
+      <Filter>Components\Debug</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

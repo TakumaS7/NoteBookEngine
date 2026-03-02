@@ -21,6 +21,8 @@ C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\createRavel.cpp;C:\Users\taku
 C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\createScene.cpp;C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\Project1\x64\Debug\createScene.obj
 C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\createGameStop.cpp;C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\Project1\x64\Debug\createGameStop.obj
 C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\createSe.cpp;C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\Project1\x64\Debug\createSe.obj
+C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\createSpeakTextDisplay.cpp;C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\Project1\x64\Debug\createSpeakTextDisplay.obj
+C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\createSpeakTextHidden.cpp;C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\Project1\x64\Debug\createSpeakTextHidden.obj
 C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\cube.cpp;C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\Project1\x64\Debug\cube.obj
 C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\camera.cpp;C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\Project1\x64\Debug\camera.obj
 C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\debug.cpp;C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\Project1\x64\Debug\debug.obj
@@ -61,6 +63,8 @@ C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\seOutput.cpp;C:\Users\takus\D
 C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\sound.cpp;C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\Project1\x64\Debug\sound.obj
 C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\speakText.cpp;C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\Project1\x64\Debug\speakText.obj
 C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\createList.cpp;C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\Project1\x64\Debug\createList.obj
+C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\speakTextDisplayOutput.cpp;C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\Project1\x64\Debug\speakTextDisplayOutput.obj
+C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\speakTextHiddenOutput.cpp;C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\Project1\x64\Debug\speakTextHiddenOutput.obj
 C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\square.cpp;C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\Project1\x64\Debug\square.obj
 C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\text.cpp;C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\Project1\x64\Debug\text.obj
 C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\textBox.cpp;C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\Project1\x64\Debug\textBox.obj

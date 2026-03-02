@@ -23,6 +23,8 @@
 #include "createRavel.h"
 #include "createBranchButton.h"
 #include "createJump.h"
+#include "createSpeakTextHidden.h"
+#include "createSpeakTextDisplay.h"
 
 #include "transform.h"
 #include "sortingLayer.h"
@@ -205,6 +207,32 @@ CreateJump* CreateList::AddJump(const std::wstring& targetRavelName)
 	SetScrollMinMax();
 
 	return jump;
+}
+
+CreateSpeakTextHidden* CreateList::AddSpeakTextHidden()
+{
+	CreateSpeakTextHidden* speakTextHidden = Manager::GetScene()->AddGameObject<CreateSpeakTextHidden>(OBJECT_2D);
+	speakTextHidden->Init();
+
+	/* ƒŠƒXƒg‚É“o˜^ */
+	m_listObjects.push_back({ std::move(speakTextHidden), ObjectType::SpeakTextHidden });
+
+	SetScrollMinMax();
+
+	return speakTextHidden;
+}
+
+CreateSpeakTextDisplay* CreateList::AddSpeakTextDisplay()
+{
+	CreateSpeakTextDisplay* speakTextDisplay = Manager::GetScene()->AddGameObject<CreateSpeakTextDisplay>(OBJECT_2D);
+	speakTextDisplay->Init();
+
+	/* ƒŠƒXƒg‚É“o˜^ */
+	m_listObjects.push_back({ std::move(speakTextDisplay), ObjectType::SpeakTextDisplay });
+
+	SetScrollMinMax();
+
+	return speakTextDisplay;
 }
 
 void CreateList::SetScrollMinMax()

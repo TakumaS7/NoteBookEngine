@@ -44,21 +44,25 @@ class CreateGameStop;
 class CreateRavel;
 class CreateBranchButton;
 class CreateJump;
+class CreateSpeakTextHidden;
+class CreateSpeakTextDisplay;
 
 enum class ObjectType
 {
-	Type_None,		// タイプなし
-	SpeakText,		// セリフテキスト
-	BgTexture,		// 背景画像
-	CharaAppearance,// キャラの登場
-	CharaChange,	// キャラの状態変更
-	CharaExit,		// キャラの退場
-	BGM,			// BGM
-	SE,				// SE
-	GameStop,		// ゲーム停止
-	Ravel,			// ラベル
-	BranchButton,	// 分岐ボタン
-	Jump,			// ジャンプ
+	Type_None,			// タイプなし
+	SpeakText,			// セリフテキスト
+	BgTexture,			// 背景画像
+	CharaAppearance,	// キャラの登場
+	CharaChange,		// キャラの状態変更
+	CharaExit,			// キャラの退場
+	BGM,				// BGM
+	SE,					// SE
+	GameStop,			// ゲーム停止
+	Ravel,				// ラベル
+	BranchButton,		// 分岐ボタン
+	Jump,				// ジャンプ
+	SpeakTextHidden,	// テキストフレーム非表示
+	SpeakTextDisplay,	// テキストフレーム表示
 };
 
 struct ObjectEntry
@@ -116,6 +120,8 @@ public:
 	CreateRavel* AddRavel(const std::wstring& ravelName);
 	CreateBranchButton* AddBranchButton(const std::wstring& targetRavelName, const std::wstring& buttonText, const std::wstring texturePath, XMFLOAT2& pos, XMFLOAT2& scale, const Vector3& textColor);
 	CreateJump* AddJump(const std::wstring& targetRavelName);
+	CreateSpeakTextHidden* AddSpeakTextHidden();
+	CreateSpeakTextDisplay* AddSpeakTextDisplay();
 
 	void ListObjectDestroy() {
 		// 削除予定のオブジェクトをリストから除去

@@ -1,9 +1,46 @@
-﻿  bgTextureOutput.cpp
+﻿  bgmOutput.cpp
+  bgTextureOutput.cpp
+  branchButtonOutput.cpp
+  branchButton.cpp
+  charaAppearanceOutput.cpp
+  charaChangeOutput.cpp
+  charaExitOutput.cpp
+  createBgTexture.cpp
+  createBranchButton.cpp
+  createCharaAppearance.cpp
+  createCharaChange.cpp
+  createCharaExit.cpp
+  createBgm.cpp
+  createJump.cpp
+  createRavel.cpp
+  createScene.cpp
+  createGameStop.cpp
+  createSe.cpp
+  createSpeakTextDisplay.cpp
+  createSpeakTextHidden.cpp
+  コンパイル中...
+  deleteSpeakText.cpp
   executeManager.cpp
+  imGuiManager.cpp
+  jumpOutput.cpp
+  nameText.cpp
+  projectLoad.cpp
+C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\projectLoadComponent.h(257,35): warning C4101: 'e': ローカル変数は 1 度も使われていません。
+  (ソース ファイル 'projectLoad.cpp' をコンパイルしています)
+  
+  projectSaveButton.cpp
+  createSpeakText.cpp
+  seOutput.cpp
+  speakText.cpp
+  createList.cpp
+  speakTextDisplayOutput.cpp
+  speakTextHiddenOutput.cpp
+  text.cpp
+  textBox.cpp
   コード生成しています。
-  2 of 6420 functions (<0.1%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    69 functions had inline decision re-evaluated but remain unchanged
+  183 of 6500 functions ( 2.8%) were compiled, the rest were copied from previous compilation.
+    72 functions were new in current compilation
+    457 functions had inline decision re-evaluated but remain unchanged
   コード生成が終了しました。
 DirectXTex_Release.lib(DirectXTexD3D11.obj) : warning LNK4099: PDB '' が 'DirectXTex_Release.lib(DirectXTexD3D11.obj)' で、または '' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
 DirectXTex_Release.lib(DirectXTexWIC.obj) : warning LNK4099: PDB '' が 'DirectXTex_Release.lib(DirectXTexWIC.obj)' で、または '' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。

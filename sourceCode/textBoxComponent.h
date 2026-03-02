@@ -54,10 +54,20 @@ private:
 
     std::vector<ObjectEntry> m_listObjects;  // 全体のリストオブジェクト
 
+    bool m_display = true;  // テキストボックス表示状態
+
 public:
     void Set(Transform* transform) { m_transform = transform; }
 
     bool GetIsTextFullyShown() const { return m_isTextFullyShown; }
+
+    /* テキストフレームを表示へ */
+    void SetDisplay() { m_display = true; }
+    /* テキストフレームを非表示へ */
+    void SetHidden() { m_display = false; }
+
+    /* テキストフレーム非表示状態のゲッター */
+    bool GetDisplay() const { return m_display; }
 
     /* スキップ機能が来た時に使用 */
     void TextIndexSkip(unsigned int skipObjectIndex)
@@ -102,6 +112,13 @@ public:
         /* インデックスが最後まで行ったら停止 */
         if (!m_speakText || m_isFinished) { return; }
 
+        /* 非表示だった場合は通らない */
+        if (m_display == false) 
+        { 
+			m_isTextFullyShown = true;    // 非表示のまま全文表示された状態にする
+            return; 
+        }
+
         float delta = Time::m_deltaTime;
         m_timer += delta;
 
@@ -127,6 +144,14 @@ public:
 
     void LeftClickText()
     {
+        /* 非表示なら無視する */
+        if (m_display == false) 
+        {
+			m_currentIndex++;           // 次の文のIndexへ（スキップと同様に次の文へ行く）
+			m_isTextFullyShown = true;  // 非表示のまま全文表示された状態にする
+            return; 
+        }
+
         /* リストの途中からなら */
         if (m_listTextParameter[0].listIndex > 0 && m_firstLoad == false)
         {

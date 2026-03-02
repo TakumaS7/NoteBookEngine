@@ -468,66 +468,101 @@ void ImGuiManager::SoundEditor()
 
 void ImGuiManager::SystemEditor()
 {
-    if (ImGui::BeginTabBar("システムテーブル"))
+    if (ImGui::TreeNode(u8"分岐システム"))
     {
-        if (ImGui::BeginTabItem(u8"ゲーム停止"))
+        if (ImGui::BeginTabBar("分岐システムテーブル"))
         {
-            if (ImGui::Button(u8"生成"))
+            if (ImGui::BeginTabItem(u8"ゲーム停止"))
             {
-                Manager::GetScene()->GetGameObject<CreateList>()->AddGameStop();
-            }
-
-            ImGui::EndTabItem();
-        }
-
-        if (ImGui::BeginTabItem(u8"ラベル"))
-        {
-            std::wstring ravelName;
-            ImGuiManager::InputRavelNameW(u8"ラベル名", ravelName);
-
-            if (ImGui::Button(u8"ラベル生成"))
-            {
-                if (!ravelName.empty())
+                if (ImGui::Button(u8"生成"))
                 {
-                    Manager::GetScene()->GetGameObject<CreateList>()->AddRavel(ravelName);
-                    m_imeRavelName.inputBuffer.erase();
+                    Manager::GetScene()->GetGameObject<CreateList>()->AddGameStop();
                 }
+
+                ImGui::EndTabItem();
             }
 
-            ImGui::EndTabItem();
-        }
-
-        if (ImGui::BeginTabItem(u8"分岐ボタン"))
-        {
-            BranchButtonEditor();
-
-            ImGui::EndTabItem();
-        }
-
-        if (ImGui::BeginTabItem(u8"ジャンプ"))
-        {
-            if (ImGui::BeginMenu(u8"ラベル選択"))
+            if (ImGui::BeginTabItem(u8"ラベル"))
             {
-                ShowRavelSelector(m_selectRavelName);
+                std::wstring ravelName;
+                ImGuiManager::InputRavelNameW(u8"ラベル名", ravelName);
 
-                ImGui::EndMenu();
-            }
-
-            ImGui::TextWrapped(u8"ラベル選択中：%s", Utf16ToUtf8(m_selectRavelName).c_str());
-
-            if (ImGui::Button(u8"生成"))
-            {
-                if (!m_selectRavelName.empty())
+                if (ImGui::Button(u8"ラベル生成"))
                 {
-                    Manager::GetScene()->GetGameObject<CreateList>()->AddJump(m_selectRavelName);
-                    m_selectRavelName.erase();
+                    if (!ravelName.empty())
+                    {
+                        Manager::GetScene()->GetGameObject<CreateList>()->AddRavel(ravelName);
+                        m_imeRavelName.inputBuffer.erase();
+                    }
                 }
+
+                ImGui::EndTabItem();
             }
 
-            ImGui::EndTabItem();
+            if (ImGui::BeginTabItem(u8"分岐ボタン"))
+            {
+                BranchButtonEditor();
+
+                ImGui::EndTabItem();
+            }
+
+            if (ImGui::BeginTabItem(u8"ジャンプ"))
+            {
+                if (ImGui::BeginMenu(u8"ラベル選択"))
+                {
+                    ShowRavelSelector(m_selectRavelName);
+
+                    ImGui::EndMenu();
+                }
+
+                ImGui::TextWrapped(u8"ラベル選択中：%s", Utf16ToUtf8(m_selectRavelName).c_str());
+
+                if (ImGui::Button(u8"生成"))
+                {
+                    if (!m_selectRavelName.empty())
+                    {
+                        Manager::GetScene()->GetGameObject<CreateList>()->AddJump(m_selectRavelName);
+                        m_selectRavelName.erase();
+                    }
+                }
+
+                ImGui::EndTabItem();
+            }
+
+            ImGui::EndTabBar();
         }
 
-        ImGui::EndTabBar();
+        ImGui::TreePop();
+    }
+
+    if (ImGui::TreeNode(u8"テキストシステム"))
+    {
+        if (ImGui::BeginTabBar("テキストフレームシステムテーブル"))
+        {
+            if (ImGui::BeginTabItem(u8"テキストフレーム表示"))
+            {
+                if (ImGui::Button(u8"表示生成"))
+                {
+                    Manager::GetScene()->GetGameObject<CreateList>()->AddSpeakTextDisplay();
+                }
+
+                ImGui::EndTabItem();
+            }
+
+            if (ImGui::BeginTabItem(u8"テキストフレーム非表示"))
+            {
+                if (ImGui::Button(u8"非表示生成"))
+                {
+                    Manager::GetScene()->GetGameObject<CreateList>()->AddSpeakTextHidden();
+                }
+
+                ImGui::EndTabItem();
+            }
+
+            ImGui::EndTabBar();
+        }
+
+		ImGui::TreePop();
     }
 }
 
