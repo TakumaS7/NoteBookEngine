@@ -62,12 +62,33 @@ public:
     bool GetIsTextFullyShown() const { return m_isTextFullyShown; }
 
     /* テキストフレームを表示へ */
-    void SetDisplay() { m_display = true; }
+    void SetDisplay() 
+    { 
+        m_display = true;
+    }
     /* テキストフレームを非表示へ */
     void SetHidden() { m_display = false; }
 
     /* テキストフレーム非表示状態のゲッター */
     bool GetDisplay() const { return m_display; }
+
+    /* 表示中のテキストのクリア */
+    void DisplayedTextClear()
+    {
+        m_displayedText.clear();    // 文字表示状態をリセット
+        m_charIndex = 0;            // ０文字目から始める
+
+        /* 文字を空にする */
+        if (m_speakText)
+        {
+            m_speakText->Set(L"", m_transform);
+        }
+
+        if (m_nameText)
+        {
+            m_nameText->Set(L"", m_nameTransform);
+        }
+    }
 
     /* スキップ機能が来た時に使用 */
     void TextIndexSkip(unsigned int skipObjectIndex)

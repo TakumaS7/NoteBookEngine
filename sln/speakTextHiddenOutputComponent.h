@@ -63,6 +63,9 @@ public:
 
 				/* 表示フラグをOFFにする */
 				m_textBox->GetComponent<TextBoxComponent>()->SetHidden();
+				
+				/* 表示中のテキストをクリアする */
+				m_textBox->GetComponent<TextBoxComponent>()->DisplayedTextClear();
 
 				m_hiddenState = HIDDEN_END;	// 非表示処理を終える
 			}
