@@ -78,7 +78,7 @@ public:
                 if (m_currentIndex < m_listBgmParameter.size())
                 {
                     /* “Ç‚İ‚İ */
-                    m_bgm->GetComponent<SoundComponent>()->SetMusic(m_listBgmParameter[m_currentIndex].path, false);
+                    m_bgm->GetComponent<SoundComponent>()->SetMusic(m_listBgmParameter[m_currentIndex].path, true);
                 }
 
                 find = false;			// ˆê‰ñ“Çˆ—‚ª‘–‚Á‚½‚çAI—¹‚·‚é

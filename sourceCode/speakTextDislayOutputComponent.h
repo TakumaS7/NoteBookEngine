@@ -56,7 +56,7 @@ public:
 
 			if (m_textBox && m_nameText && m_speakText)
 			{
-				/* テキストフレームとテキストを非表示にする */
+				/* テキストフレームとテキストを表示にする */
 				m_textBox->GetComponent<TextureComponent>()->SetAlpha(m_alphaOne);
 				m_nameText->GetComponent<TextComponent>()->SetAlpha(m_alphaOne);
 				m_speakText->GetComponent<TextComponent>()->SetAlpha(m_alphaOne);

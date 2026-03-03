@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\takus\\Documents\\GitHub\\NoteBookEngine\\sln\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{10FB9B59-63F5-430C-A0B3-21355D2444FA}|Project1.vcxproj|C:\\Users\\takus\\Documents\\GitHub\\NoteBookEngine\\sln\\textBoxComponent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{10FB9B59-63F5-430C-A0B3-21355D2444FA}|Project1.vcxproj|solutionrelative:textBoxComponent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{10FB9B59-63F5-430C-A0B3-21355D2444FA}|Project1.vcxproj|C:\\Users\\takus\\Documents\\GitHub\\NoteBookEngine\\sln\\bgmOutputComponent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{10FB9B59-63F5-430C-A0B3-21355D2444FA}|Project1.vcxproj|solutionrelative:bgmOutputComponent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10FB9B59-63F5-430C-A0B3-21355D2444FA}|Project1.vcxproj|C:\\Users\\takus\\Documents\\GitHub\\NoteBookEngine\\sln\\speakTextDislayOutputComponent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{10FB9B59-63F5-430C-A0B3-21355D2444FA}|Project1.vcxproj|solutionrelative:speakTextDislayOutputComponent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10FB9B59-63F5-430C-A0B3-21355D2444FA}|Project1.vcxproj|C:\\Users\\takus\\Documents\\GitHub\\NoteBookEngine\\sln\\speakTextHiddenOutputComponent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{10FB9B59-63F5-430C-A0B3-21355D2444FA}|Project1.vcxproj|solutionrelative:speakTextHiddenOutputComponent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10FB9B59-63F5-430C-A0B3-21355D2444FA}|Project1.vcxproj|C:\\Users\\takus\\Documents\\GitHub\\NoteBookEngine\\sln\\textBoxComponent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{10FB9B59-63F5-430C-A0B3-21355D2444FA}|Project1.vcxproj|solutionrelative:textBoxComponent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{10FB9B59-63F5-430C-A0B3-21355D2444FA}|Project1.vcxproj|C:\\Users\\takus\\Documents\\GitHub\\NoteBookEngine\\sln\\seOutputComponent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -37,14 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{10FB9B59-63F5-430C-A0B3-21355D2444FA}|Project1.vcxproj|C:\\Users\\takus\\Documents\\GitHub\\NoteBookEngine\\sln\\text.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{10FB9B59-63F5-430C-A0B3-21355D2444FA}|Project1.vcxproj|solutionrelative:text.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10FB9B59-63F5-430C-A0B3-21355D2444FA}|Project1.vcxproj|C:\\Users\\takus\\Documents\\GitHub\\NoteBookEngine\\sln\\speakTextDislayOutputComponent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{10FB9B59-63F5-430C-A0B3-21355D2444FA}|Project1.vcxproj|solutionrelative:speakTextDislayOutputComponent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{10FB9B59-63F5-430C-A0B3-21355D2444FA}|Project1.vcxproj|C:\\Users\\takus\\Documents\\GitHub\\NoteBookEngine\\sln\\speakTextHiddenOutputComponent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{10FB9B59-63F5-430C-A0B3-21355D2444FA}|Project1.vcxproj|solutionrelative:speakTextHiddenOutputComponent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{10FB9B59-63F5-430C-A0B3-21355D2444FA}|Project1.vcxproj|C:\\Users\\takus\\Documents\\GitHub\\NoteBookEngine\\sln\\speakTextDisplayOutput.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -141,7 +141,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -153,15 +153,91 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "seOutputComponent.h",
-              "DocumentMoniker": "C:\\Users\\takus\\Documents\\GitHub\\NoteBookEngine\\sln\\seOutputComponent.h",
-              "RelativeDocumentMoniker": "seOutputComponent.h",
-              "ToolTip": "C:\\Users\\takus\\Documents\\GitHub\\NoteBookEngine\\sln\\seOutputComponent.h",
-              "RelativeToolTip": "seOutputComponent.h",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAAHYAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "text.cpp",
+              "DocumentMoniker": "C:\\Users\\takus\\Documents\\GitHub\\NoteBookEngine\\sln\\text.cpp",
+              "RelativeDocumentMoniker": "text.cpp",
+              "ToolTip": "C:\\Users\\takus\\Documents\\GitHub\\NoteBookEngine\\sln\\text.cpp",
+              "RelativeToolTip": "text.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKkAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-03-02T04:05:00.545Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "projectLoadComponent.h",
+              "DocumentMoniker": "C:\\Users\\takus\\Documents\\GitHub\\NoteBookEngine\\sln\\projectLoadComponent.h",
+              "RelativeDocumentMoniker": "projectLoadComponent.h",
+              "ToolTip": "C:\\Users\\takus\\Documents\\GitHub\\NoteBookEngine\\sln\\projectLoadComponent.h",
+              "RelativeToolTip": "projectLoadComponent.h",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAPIAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-03-03T01:43:18.586Z"
+              "WhenOpened": "2026-02-26T02:43:31.12Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "bgmOutputComponent.h",
+              "DocumentMoniker": "C:\\Users\\takus\\Documents\\GitHub\\NoteBookEngine\\sln\\bgmOutputComponent.h",
+              "RelativeDocumentMoniker": "bgmOutputComponent.h",
+              "ToolTip": "C:\\Users\\takus\\Documents\\GitHub\\NoteBookEngine\\sln\\bgmOutputComponent.h",
+              "RelativeToolTip": "bgmOutputComponent.h",
+              "ViewState": "AgIAAC8AAAAAAAAAAAD4v1AAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-02-26T02:23:01.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "bgTextureOutputComponent.h",
+              "DocumentMoniker": "C:\\Users\\takus\\Documents\\GitHub\\NoteBookEngine\\sln\\bgTextureOutputComponent.h",
+              "RelativeDocumentMoniker": "bgTextureOutputComponent.h",
+              "ToolTip": "C:\\Users\\takus\\Documents\\GitHub\\NoteBookEngine\\sln\\bgTextureOutputComponent.h",
+              "RelativeToolTip": "bgTextureOutputComponent.h",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAJ4AAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-02-26T01:04:33.562Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "textBoxComponent.h",
+              "DocumentMoniker": "C:\\Users\\takus\\Documents\\GitHub\\NoteBookEngine\\sln\\textBoxComponent.h",
+              "RelativeDocumentMoniker": "textBoxComponent.h",
+              "ToolTip": "C:\\Users\\takus\\Documents\\GitHub\\NoteBookEngine\\sln\\textBoxComponent.h",
+              "RelativeToolTip": "textBoxComponent.h",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAAAEsAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-02-26T00:59:37.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "speakTextDislayOutputComponent.h",
+              "DocumentMoniker": "C:\\Users\\takus\\Documents\\GitHub\\NoteBookEngine\\sln\\speakTextDislayOutputComponent.h",
+              "RelativeDocumentMoniker": "speakTextDislayOutputComponent.h",
+              "ToolTip": "C:\\Users\\takus\\Documents\\GitHub\\NoteBookEngine\\sln\\speakTextDislayOutputComponent.h",
+              "RelativeToolTip": "speakTextDislayOutputComponent.h",
+              "ViewState": "AgIAACoAAAAAAAAAAAAkwEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-03-02T06:05:11.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "speakTextHiddenOutputComponent.h",
+              "DocumentMoniker": "C:\\Users\\takus\\Documents\\GitHub\\NoteBookEngine\\sln\\speakTextHiddenOutputComponent.h",
+              "RelativeDocumentMoniker": "speakTextHiddenOutputComponent.h",
+              "ToolTip": "C:\\Users\\takus\\Documents\\GitHub\\NoteBookEngine\\sln\\speakTextHiddenOutputComponent.h",
+              "RelativeToolTip": "speakTextHiddenOutputComponent.h",
+              "ViewState": "AgIAACcAAAAAAAAAAAAkwEMAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-03-02T03:28:21.673Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -177,68 +253,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "text.cpp",
-              "DocumentMoniker": "C:\\Users\\takus\\Documents\\GitHub\\NoteBookEngine\\sln\\text.cpp",
-              "RelativeDocumentMoniker": "text.cpp",
-              "ToolTip": "C:\\Users\\takus\\Documents\\GitHub\\NoteBookEngine\\sln\\text.cpp",
-              "RelativeToolTip": "text.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKkAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-03-02T04:05:00.545Z"
+              "DocumentIndex": 4,
+              "Title": "seOutputComponent.h",
+              "DocumentMoniker": "C:\\Users\\takus\\Documents\\GitHub\\NoteBookEngine\\sln\\seOutputComponent.h",
+              "RelativeDocumentMoniker": "seOutputComponent.h",
+              "ToolTip": "C:\\Users\\takus\\Documents\\GitHub\\NoteBookEngine\\sln\\seOutputComponent.h",
+              "RelativeToolTip": "seOutputComponent.h",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAHYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-03-03T01:43:18.586Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "projectLoadComponent.h",
-              "DocumentMoniker": "C:\\Users\\takus\\Documents\\GitHub\\NoteBookEngine\\sln\\projectLoadComponent.h",
-              "RelativeDocumentMoniker": "projectLoadComponent.h",
-              "ToolTip": "C:\\Users\\takus\\Documents\\GitHub\\NoteBookEngine\\sln\\projectLoadComponent.h",
-              "RelativeToolTip": "projectLoadComponent.h",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAPIAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-02-26T02:43:31.12Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "bgmOutputComponent.h",
-              "DocumentMoniker": "C:\\Users\\takus\\Documents\\GitHub\\NoteBookEngine\\sln\\bgmOutputComponent.h",
-              "RelativeDocumentMoniker": "bgmOutputComponent.h",
-              "ToolTip": "C:\\Users\\takus\\Documents\\GitHub\\NoteBookEngine\\sln\\bgmOutputComponent.h",
-              "RelativeToolTip": "bgmOutputComponent.h",
-              "ViewState": "AgIAAC8AAAAAAAAAAAD4v0wAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-02-26T02:23:01.597Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "bgTextureOutputComponent.h",
-              "DocumentMoniker": "C:\\Users\\takus\\Documents\\GitHub\\NoteBookEngine\\sln\\bgTextureOutputComponent.h",
-              "RelativeDocumentMoniker": "bgTextureOutputComponent.h",
-              "ToolTip": "C:\\Users\\takus\\Documents\\GitHub\\NoteBookEngine\\sln\\bgTextureOutputComponent.h",
-              "RelativeToolTip": "bgTextureOutputComponent.h",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAAAJ4AAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-02-26T01:04:33.562Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "textBoxComponent.h",
-              "DocumentMoniker": "C:\\Users\\takus\\Documents\\GitHub\\NoteBookEngine\\sln\\textBoxComponent.h",
-              "RelativeDocumentMoniker": "textBoxComponent.h",
-              "ToolTip": "C:\\Users\\takus\\Documents\\GitHub\\NoteBookEngine\\sln\\textBoxComponent.h",
-              "RelativeToolTip": "textBoxComponent.h",
-              "ViewState": "AgIAACsAAAAAAAAAAAAUwEAAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-02-26T00:59:37.613Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "executeManagerComponent.h",
               "DocumentMoniker": "C:\\Users\\takus\\Documents\\GitHub\\NoteBookEngine\\sln\\executeManagerComponent.h",
               "RelativeDocumentMoniker": "executeManagerComponent.h",
@@ -262,7 +289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "saveButtonComponent.h",
               "DocumentMoniker": "C:\\Users\\takus\\Documents\\GitHub\\NoteBookEngine\\sln\\saveButtonComponent.h",
               "RelativeDocumentMoniker": "saveButtonComponent.h",
@@ -274,31 +301,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "speakTextHiddenOutputComponent.h",
-              "DocumentMoniker": "C:\\Users\\takus\\Documents\\GitHub\\NoteBookEngine\\sln\\speakTextHiddenOutputComponent.h",
-              "RelativeDocumentMoniker": "speakTextHiddenOutputComponent.h",
-              "ToolTip": "C:\\Users\\takus\\Documents\\GitHub\\NoteBookEngine\\sln\\speakTextHiddenOutputComponent.h",
-              "RelativeToolTip": "speakTextHiddenOutputComponent.h",
-              "ViewState": "AgIAABIAAAAAAAAAAAAkwD8AAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-03-02T03:28:21.673Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "speakTextDislayOutputComponent.h",
-              "DocumentMoniker": "C:\\Users\\takus\\Documents\\GitHub\\NoteBookEngine\\sln\\speakTextDislayOutputComponent.h",
-              "RelativeDocumentMoniker": "speakTextDislayOutputComponent.h",
-              "ToolTip": "C:\\Users\\takus\\Documents\\GitHub\\NoteBookEngine\\sln\\speakTextDislayOutputComponent.h",
-              "RelativeToolTip": "speakTextDislayOutputComponent.h",
-              "ViewState": "AgIAACoAAAAAAAAAAAAkwCkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-03-02T06:05:11.401Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "textComponent.h",
               "DocumentMoniker": "C:\\Users\\takus\\Documents\\GitHub\\NoteBookEngine\\sln\\textComponent.h",
               "RelativeDocumentMoniker": "textComponent.h",
