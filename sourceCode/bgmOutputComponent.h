@@ -63,7 +63,7 @@ public:
                 m_currentIndex = i; // 次に流すBGMのインデックスを代入
 
                 /* 先頭じゃない場合は１を引く（LeftClickで1足すため） */
-                if (m_firstLoad == true && m_currentIndex > 0)
+                if (m_firstLoadEnd == true && m_currentIndex > 0)
                 {
                     m_currentIndex += -1;
                 }
@@ -78,7 +78,7 @@ public:
                 if (m_currentIndex < m_listBgmParameter.size())
                 {
                     /* 読み込み */
-                    m_bgm->GetComponent<SoundComponent>()->SetMusic(m_listBgmParameter[m_currentIndex].path, true);
+                    m_bgm->GetComponent<SoundComponent>()->SetMusic(m_listBgmParameter[m_currentIndex].path, false);
                 }
 
                 find = false;			// 一回読込処理が走ったら、終了する
@@ -96,6 +96,7 @@ public:
         if (m_firstLoad == true)
         {
             /* BGMの再生 */
+            m_bgm->GetComponent<SoundComponent>()->SetStopMusic();
             m_bgm->GetComponent<SoundComponent>()->SetPlayMusic();
 
             m_firstLoad = false;

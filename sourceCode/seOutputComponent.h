@@ -64,9 +64,16 @@ public:
                 m_currentIndex = i; // 次に流すSEのインデックスを代入
 
                 /* 先頭じゃない場合は１を引く（LeftClickで1足すため） */
-                if (m_firstLoadEnd == true)
+                if (m_firstLoadEnd == true && m_currentIndex > 0)
                 {
                     m_currentIndex += -1;
+                }
+
+                /* 先頭の場合 */
+                if (i == 0)
+                {
+                    m_firstLoad = false;
+                    m_firstLoadEnd = false;
                 }
 
                 if (m_currentIndex < m_parameters.size())
@@ -109,7 +116,6 @@ public:
             if (m_currentIndex < m_parameters.size())
             {
                 /* 読み込み */
-                m_se->GetComponent<SoundComponent>()->SetStopMusic();
                 m_se->GetComponent<SoundComponent>()->SetMusic(m_parameters[m_currentIndex].path, false);
                 m_se->GetComponent<SoundComponent>()->SetPlayMusic();
             }

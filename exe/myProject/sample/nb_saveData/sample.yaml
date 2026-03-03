@@ -6,12 +6,12 @@ objectEntry:
     listObjectData: ~
   - objectType: BgTexture
     listObjectData:
-      path: C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\x64\myProject\project2\nb_asset\BuildBgTexture\TitleBG.png
+      path: C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\x64\myProject\sample\nb_asset\BuildBgTexture\TitleBG.png
   - objectType: BranchButton
     listObjectData:
       targetName: はじめる
       text: はじめる
-      path: C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\x64\myProject\project2\nb_asset\BuildBranchButton\branchButton.png
+      path: C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\x64\myProject\sample\nb_asset\BuildBranchButton\branchButton.png
       position:
         x: 248
         y: 610
@@ -22,6 +22,9 @@ objectEntry:
         x: 1
         y: 1
         z: 1
+  - objectType: BGM
+    listObjectData:
+      path: C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\x64\myProject\sample\nb_asset\BuildBgm\TitleBGM_憂鬱.mp3
   - objectType: GameStop
     listObjectData: ~
   - objectType: Ravel
@@ -29,11 +32,11 @@ objectEntry:
       name: はじめる
   - objectType: BgTexture
     listObjectData:
-      path: C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\x64\myProject\project2\nb_asset\BuildBgTexture\SchoolBG.png
+      path: C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\x64\myProject\sample\nb_asset\BuildBgTexture\SchoolBG.png
   - objectType: CharaAppearance
     listObjectData:
       name: 琴音
-      path: C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\x64\myProject\project2\nb_asset\BuildCharaTexture\kotone_normal.png
+      path: C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\x64\myProject\sample\nb_asset\BuildCharaTexture\kotone_normal.png
       position:
         x: 883
         y: 438
@@ -43,7 +46,7 @@ objectEntry:
         y: 283
   - objectType: BGM
     listObjectData:
-      path: C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\x64\myProject\project2\nb_asset\BuildBgm\KotoneBGM_maou_bgm_healing08.mp3
+      path: C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\x64\myProject\sample\nb_asset\BuildBgm\KotoneBGM_maou_bgm_healing08.mp3
   - objectType: SpeakTextDisplay
     listObjectData: ~
   - objectType: SpeakText
@@ -53,7 +56,7 @@ objectEntry:
   - objectType: CharaChange
     listObjectData:
       name: 琴音
-      path: C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\x64\myProject\project2\nb_asset\BuildCharaTexture\kotone_think.png
+      path: C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\x64\myProject\sample\nb_asset\BuildCharaTexture\kotone_think.png
       position:
         x: 883
         y: 438
