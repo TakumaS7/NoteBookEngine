@@ -1,0 +1,140 @@
+objectEntry:
+  - objectType: Ravel
+    listObjectData:
+      name: 繰り返し
+  - objectType: SpeakTextHidden
+    listObjectData: ~
+  - objectType: BgTexture
+    listObjectData:
+      path: C:\Users\takus\Documents\GitHub\NoteBookEngine\exe\myProject\branchSample\nb_asset\BuildBgTexture\SchoolBG.png
+  - objectType: SpeakTextDisplay
+    listObjectData: ~
+  - objectType: SpeakText
+    listObjectData:
+      name: ""
+      text: まずい遅刻だ！
+  - objectType: SpeakText
+    listObjectData:
+      name: ""
+      text: 急いで教室に向かおう
+  - objectType: BgTexture
+    listObjectData:
+      path: C:\Users\takus\Documents\GitHub\NoteBookEngine\exe\myProject\branchSample\nb_asset\BuildBgTexture\YumenoawaBG.png
+  - objectType: CharaAppearance
+    listObjectData:
+      name: ことね
+      path: C:\Users\takus\Documents\GitHub\NoteBookEngine\exe\myProject\branchSample\nb_asset\BuildCharaTexture\kotone_normal.png
+      position:
+        x: 924
+        y: 426
+      rotation: 0
+      scale:
+        x: 196.19191
+        y: 314.805054
+  - objectType: SpeakText
+    listObjectData:
+      name: ことね
+      text: 「やっほー！」
+  - objectType: SpeakText
+    listObjectData:
+      name: ことね
+      text: 「遅いよー」
+  - objectType: SpeakText
+    listObjectData:
+      name: ことね
+      text: 「それじゃ！面接を始めます！」
+  - objectType: CharaChange
+    listObjectData:
+      name: ことね
+      path: C:\Users\takus\Documents\GitHub\NoteBookEngine\exe\myProject\branchSample\nb_asset\BuildCharaTexture\kotone_think.png
+      position:
+        x: 924
+        y: 426
+      rotation: 0
+      scale:
+        x: 196.19191
+        y: 314.805054
+  - objectType: SpeakText
+    listObjectData:
+      name: ことね
+      text: 「私の好きな食べ物は何でしょうか？」
+  - objectType: BranchButton
+    listObjectData:
+      targetName: にく
+      text: にく
+      path: C:\Users\takus\Documents\GitHub\NoteBookEngine\exe\myProject\branchSample\nb_asset\BuildBranchButton\branchButton.png
+      position:
+        x: 894
+        y: 340
+      scale:
+        x: 119
+        y: 40
+      textColor:
+        x: 1
+        y: 0
+        z: 0
+  - objectType: BranchButton
+    listObjectData:
+      targetName: さかな
+      text: さかな
+      path: C:\Users\takus\Documents\GitHub\NoteBookEngine\exe\myProject\branchSample\nb_asset\BuildBranchButton\branchButton.png
+      position:
+        x: 330
+        y: 340
+      scale:
+        x: 119
+        y: 40
+      textColor:
+        x: 0
+        y: 0.200772285
+        z: 1
+  - objectType: GameStop
+    listObjectData: ~
+  - objectType: Ravel
+    listObjectData:
+      name: にく
+  - objectType: SpeakText
+    listObjectData:
+      name: ことね
+      text: 「ピンポーン！正解です！合格！」
+  - objectType: Jump
+    listObjectData:
+      targetName: 面接終了
+  - objectType: Ravel
+    listObjectData:
+      name: さかな
+  - objectType: SpeakText
+    listObjectData:
+      name: ことね
+      text: 「ブー！不合格！」
+  - objectType: Jump
+    listObjectData:
+      targetName: 面接終了
+  - objectType: Ravel
+    listObjectData:
+      name: 面接終了
+  - objectType: CharaChange
+    listObjectData:
+      name: ことね
+      path: C:\Users\takus\Documents\GitHub\NoteBookEngine\exe\myProject\branchSample\nb_asset\BuildCharaTexture\kotone_normal.png
+      position:
+        x: 924
+        y: 426
+      rotation: 0
+      scale:
+        x: 196.190002
+        y: 314.809998
+  - objectType: SpeakText
+    listObjectData:
+      name: ことね
+      text: 「これで面接を終わりにします！」
+  - objectType: CharaExit
+    listObjectData:
+      name: ことね
+  - objectType: SpeakTextHidden
+    listObjectData: ~
+  - objectType: Jump
+    listObjectData:
+      targetName: 繰り返し
+charaNames:
+  - name: ことね
