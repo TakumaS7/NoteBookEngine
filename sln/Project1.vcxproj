@@ -169,7 +169,6 @@
     <ClCompile Include="executeButton.cpp" />
     <ClCompile Include="executeManager.cpp" />
     <ClCompile Include="fade.cpp" />
-    <ClCompile Include="game.cpp" />
     <ClCompile Include="gameStopOutput.cpp" />
     <ClCompile Include="imGuiManager.cpp" />
     <ClCompile Include="ImGui\imgui.cpp" />
@@ -194,7 +193,6 @@
     <ClCompile Include="projectLoad.cpp" />
     <ClCompile Include="projectSaveButton.cpp" />
     <ClCompile Include="renderer.cpp" />
-    <ClCompile Include="result.cpp" />
     <ClCompile Include="scene.cpp" />
     <ClCompile Include="createSpeakText.cpp" />
     <ClCompile Include="se.cpp" />
@@ -275,7 +273,6 @@
     <ClInclude Include="component.h" />
     <ClInclude Include="executeButton.h" />
     <ClInclude Include="fade.h" />
-    <ClInclude Include="game.h" />
     <ClInclude Include="imGuiManager.h" />
     <ClInclude Include="ImGui\imconfig.h" />
     <ClInclude Include="ImGui\imgui.h" />
@@ -319,7 +316,6 @@
     <ClInclude Include="player.h" />
     <ClInclude Include="playButton.h" />
     <ClInclude Include="renderer.h" />
-    <ClInclude Include="result.h" />
     <ClInclude Include="rigidbody.h" />
     <ClInclude Include="scene.h" />
     <ClInclude Include="setDeleteButton.h" />

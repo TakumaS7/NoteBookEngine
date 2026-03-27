@@ -43,12 +43,6 @@
     <Filter Include="Scene">
       <UniqueIdentifier>{039a9ded-379f-4def-8f50-f3b2e45b752b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Scene\Game">
-      <UniqueIdentifier>{25db05f1-06e3-4b01-bda7-c5c2d75db021}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Scene\Result">
-      <UniqueIdentifier>{2e28eed8-caff-4684-b318-82f6a07e718e}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Components\3DVertex">
       <UniqueIdentifier>{07190eca-f636-4a56-b1ec-82ff145d9cc4}</UniqueIdentifier>
     </Filter>
@@ -263,12 +257,6 @@
     </ClCompile>
     <ClCompile Include="plane.cpp">
       <Filter>Objects\Plane</Filter>
-    </ClCompile>
-    <ClCompile Include="game.cpp">
-      <Filter>Scene\Game</Filter>
-    </ClCompile>
-    <ClCompile Include="result.cpp">
-      <Filter>Scene\Result</Filter>
     </ClCompile>
     <ClCompile Include="scene.cpp">
       <Filter>Scene</Filter>
@@ -532,12 +520,6 @@
     </ClInclude>
     <ClInclude Include="scene.h">
       <Filter>Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="game.h">
-      <Filter>Scene\Game</Filter>
-    </ClInclude>
-    <ClInclude Include="result.h">
-      <Filter>Scene\Result</Filter>
     </ClInclude>
     <ClInclude Include="rigidbody.h">
       <Filter>Components</Filter>

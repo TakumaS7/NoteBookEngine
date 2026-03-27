@@ -15,8 +15,6 @@
 #include "vector3.h"
 #include "manager.h"
 #include "title.h"
-#include "game.h"
-#include "result.h"
 
 class Fade
 {
@@ -51,8 +49,6 @@ public:
 	enum FadeSceneState
 	{
 		TITLE,
-		GAME,
-		RESULT,
 		CREATE_SCENE,
 		SCENE_MAX,
 	};

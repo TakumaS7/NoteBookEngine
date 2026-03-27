@@ -30,7 +30,6 @@ C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\deleteSpeakText.cpp;C:\Users\
 C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\executeButton.cpp;C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\Project1\x64\Release\executeButton.obj
 C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\executeManager.cpp;C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\Project1\x64\Release\executeManager.obj
 C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\fade.cpp;C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\Project1\x64\Release\fade.obj
-C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\game.cpp;C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\Project1\x64\Release\game.obj
 C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\gameStopOutput.cpp;C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\Project1\x64\Release\gameStopOutput.obj
 C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\imGuiManager.cpp;C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\Project1\x64\Release\imGuiManager.obj
 C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\ImGui\imgui.cpp;C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\Project1\x64\Release\imgui.obj
@@ -55,7 +54,6 @@ C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\playButton.cpp;C:\Users\takus
 C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\projectLoad.cpp;C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\Project1\x64\Release\projectLoad.obj
 C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\projectSaveButton.cpp;C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\Project1\x64\Release\projectSaveButton.obj
 C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\renderer.cpp;C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\Project1\x64\Release\renderer.obj
-C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\result.cpp;C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\Project1\x64\Release\result.obj
 C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\scene.cpp;C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\Project1\x64\Release\scene.obj
 C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\createSpeakText.cpp;C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\Project1\x64\Release\createSpeakText.obj
 C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\se.cpp;C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\Project1\x64\Release\se.obj

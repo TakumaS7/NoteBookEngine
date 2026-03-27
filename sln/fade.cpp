@@ -188,12 +188,6 @@ void Fade::LoadStart()
 	if (m_FadeSceneState == TITLE) {
 		Load::StartLoading(Load::LOAD_TITLE);
 	}
-	else if (m_FadeSceneState == GAME) {
-		Load::StartLoading(Load::LOAD_GAME);
-	}
-	else if (m_FadeSceneState == RESULT){
-		Load::StartLoading(Load::LOAD_RESULT);
-	}
 	else if (m_FadeSceneState == CREATE_SCENE) {
 		Load::StartLoading(Load::LOAD_CREATE_SCENE);
 	}

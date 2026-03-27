@@ -26,8 +26,6 @@ public:
 	{
 		NONE,
 		LOAD_TITLE,
-		LOAD_GAME,
-		LOAD_RESULT,
 		LOAD_CREATE_SCENE,
 	};
 

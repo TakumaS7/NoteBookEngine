@@ -35,11 +35,6 @@ void Title::Init()
 void Title::Update()
 {
 	Scene::Update();
-
-	if (Input::GetKeyTrigger(VK_RETURN) && Input::GetKeyTrigger(VK_SPACE))
-	{
-		Fade::SetFadeScene(Fade::GAME);
-	}
 }
 
 void Title::Draw()

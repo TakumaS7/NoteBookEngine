@@ -12,8 +12,6 @@
 #include "scene.h"
 
 #include "title.h"
-#include "game.h"
-#include "result.h"
 #include "createScene.h"
 
 bool Load::m_loaded = false;
@@ -46,12 +44,6 @@ void Load::SceneLoad(LoadSceneType type)
 		break;
 	case LOAD_TITLE:
 		Manager::SetScene<Title>();
-		break;
-	case LOAD_GAME:
-		Manager::SetScene<Game>();
-		break;
-	case LOAD_RESULT:
-		Manager::SetScene<Result>();
 		break;
 	case LOAD_CREATE_SCENE:
 		Manager::SetScene<CreateScene>();
