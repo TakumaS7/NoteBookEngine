@@ -184,7 +184,7 @@ public:
             m_firstLoad = true;
         }
 
-        if (m_charIndex == 0) { return; }
+        if (m_charIndex == 0 && m_currentIndex == 0) { return; }   // 最初の文が一気に出るのを防ぐ
 
         /* 左クリック処理 */
         if (!m_isTextFullyShown)

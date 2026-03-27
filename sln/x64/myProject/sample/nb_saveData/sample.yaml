@@ -32,7 +32,7 @@ objectEntry:
       name: はじめる
   - objectType: BgTexture
     listObjectData:
-      path: C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\x64\myProject\sample\nb_asset\BuildBgTexture\SchoolBG.png
+      path: C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\x64\myProject\sample\nb_asset\BuildBgTexture\YumenoawaBG.png
   - objectType: CharaAppearance
     listObjectData:
       name: 琴音
@@ -52,7 +52,7 @@ objectEntry:
   - objectType: SpeakText
     listObjectData:
       name: 琴音
-      text: こんにちは！
+      text: 「おーおはよー！」
   - objectType: CharaChange
     listObjectData:
       name: 琴音
@@ -67,7 +67,90 @@ objectEntry:
   - objectType: SpeakText
     listObjectData:
       name: 琴音
-      text: これはサンプルです！
+      text: 「今日の私何が変わったか分かる？」
+  - objectType: SpeakTextHidden
+    listObjectData: ~
+  - objectType: BranchButton
+    listObjectData:
+      targetName: 髪型
+      text: 髪型変わった？
+      path: C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\x64\myProject\sample\nb_asset\BuildBranchButton\branchButton.png
+      position:
+        x: 900
+        y: 284
+      scale:
+        x: 198
+        y: 40
+      textColor:
+        x: 0.980695009
+        y: 1
+        z: 0
+  - objectType: BranchButton
+    listObjectData:
+      targetName: メイク
+      text: メイクしてる？
+      path: C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\x64\myProject\sample\nb_asset\BuildBranchButton\branchButton.png
+      position:
+        x: 300
+        y: 284
+      scale:
+        x: 198
+        y: 40
+      textColor:
+        x: 1
+        y: 0
+        z: 0.972973347
+  - objectType: GameStop
+    listObjectData: ~
+  - objectType: Ravel
+    listObjectData:
+      name: 髪型
+  - objectType: SE
+    listObjectData:
+      path: C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\x64\myProject\sample\nb_asset\BuildSe\正解.mp3
+  - objectType: SpeakTextDisplay
+    listObjectData: ~
+  - objectType: SpeakText
+    listObjectData:
+      name: 琴音
+      text: 「おー！正解！」
+  - objectType: Jump
+    listObjectData:
+      targetName: 分岐ジャンプ
+  - objectType: Ravel
+    listObjectData:
+      name: メイク
+  - objectType: SE
+    listObjectData:
+      path: C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\x64\myProject\sample\nb_asset\BuildSe\ハズレ.mp3
+  - objectType: SpeakTextDisplay
+    listObjectData: ~
+  - objectType: SpeakText
+    listObjectData:
+      name: 琴音
+      text: 「あー！不正解！」
+  - objectType: SpeakText
+    listObjectData:
+      name: 琴音
+      text: 「正解は髪型でしたー！」
+  - objectType: Ravel
+    listObjectData:
+      name: 分岐ジャンプ
+  - objectType: CharaChange
+    listObjectData:
+      name: 琴音
+      path: C:\Users\takus\Documents\GitHub\NoteBookEngine\sln\x64\myProject\sample\nb_asset\BuildCharaTexture\kotone_normal.png
+      position:
+        x: 883
+        y: 438
+      rotation: 0
+      scale:
+        x: 199
+        y: 283
+  - objectType: SpeakText
+    listObjectData:
+      name: 琴音
+      text: 「それじゃ、授業教室行こっか！」
   - objectType: CharaExit
     listObjectData:
       name: 琴音
